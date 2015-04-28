@@ -1,0 +1,192 @@
+% \documentclass[letterpaper,12pt]{article}
+\documentclass[letterpaper,12pt]{book}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{array}
+\usepackage{longtable}
+
+\usepackage{framed}
+% \usepackage{subfig}
+\usepackage{multirow}
+\usepackage{hyperref}
+
+%% graphics and images
+\usepackage{lscape}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{rotating}
+\usepackage{caption}
+\usepackage{subcaption}
+% \usepackage{multirow}
+
+\usepackage{setspace}
+\usepackage{titlesec}
+
+%% Algorithm package
+% \usepackage{algorithm}
+\usepackage[chapter]{algorithm}
+\usepackage[noend]{algpseudocode}
+
+%% Algorithm custom command
+\makeatletter
+\def\BState{\State\hskip-\ALG@thistlm}
+\makeatother
+
+%% verbatim samepage
+\usepackage{fancyvrb}
+
+\usepackage{xspace}
+
+%% \usepackage{natbib}
+%% \bibliographystyle{abbrvnat}
+%% \bibpunct{(}{)}{;}{a}{,}{,}
+\usepackage[utf8]{inputenc}
+
+\usepackage[spanish]{babel}
+
+\setlength\topmargin{-0.375in}
+\setlength\headheight{0in}
+\setlength\headsep{0.375in}
+\setlength\textheight{9.5in}
+\setlength\textwidth{7.0in}
+\setlength\oddsidemargin{-0.25in}
+\setlength\evensidemargin{-0.25in}
+\setlength\parindent{0.25in}
+\setlength\parskip{0.25in}
+
+%% \usepackage{amssymb}
+%% using square for first level listing instead circles
+\renewcommand{\labelitemi}{\tiny$\blacksquare$}
+
+%% \usepackage{cite}
+\usepackage[backend=bibtex, bibencoding=utf8]{biblatex}
+
+\usepackage[letterpaper, portrait, margin=1.25in]{geometry}
+
+
+\providecommand{\lessgtr}{\stackrel{<}{>}} %% could be provided natively with different font encoding:
+\IfFileExists{pslatex.sty}{
+
+  \usepackage{pslatex}
+}{}
+
+%% Custom commands
+\newcommand{\eng}[1]{\textit{#1}\xspace}
+
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{N}{@{}m{0pt}@{}}
+
+
+
+
+\DefineBibliographyStrings{english}{
+  references = {Bibliografía},
+}
+\bibliography{references.bib}
+
+
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries}{Capítulo \ \thechapter}{5pt}{\Huge}   
+\titlespacing*{\chapter}{0pt}{-50pt}{40pt}
+\titlespacing*{\section}{0pt}{0pt}{0pt}
+
+
+
+\begin{document}
+
+\begin{titlepage}
+\newgeometry{top=3cm}
+\begin{centering}
+{
+\textbf{\Large UNIVERSIDAD TÉCNICA FEDERICO SANTA MARÍA}\\[0em]
+\textbf{\small DEPARTAMENTO DE INFORMÁTICA}\\[0em]
+\textbf{\small SANTIAGO -- CHILE}\\[2.4em]
+}
+\includegraphics[scale=0.295]{content/figures/logo-utfsm} \\[4em]
+\begin{spacing}{1.8}
+\textbf{\Large \uppercase{``Título de la memoria''}}\\[3.70em]
+\end{spacing}
+\textbf{\large \uppercase{Pablo Antonio Ortega Mesa}}\\[0.54em]
+\textbf{\small MEMORIA DE TITULACIÓN PARA OPTAR AL TÍTULO DE INGENIERO CIVIL INFORMÁTICA} \\[1em]
+\begin{tabular}{ccc} \small\bf
+\small\bf PROFESOR GUÍA:          & & \small\bf \uppercase{Marcelo Mendoza} \\
+\small\bf PROFESOR CORREFERENTE:  & & \small\bf \uppercase{Profesor Correferente} \\
+\end{tabular} \\[2.5em]
+\textbf{\small Mayo -- 2015} \\
+\end{centering}
+\end{titlepage}
+
+
+\setstretch{1.5}
+
+\section*{Resumen}
+\input{content/1_abstract_es.tex}
+\clearpage
+
+\section*{Abstract}
+\input{content/2_abstract_en.tex}
+\clearpage
+
+\section*{Agradecimientos}
+\input{content/3_acknowledgments.tex}
+\clearpage
+
+\let\cleardoublepage\clearpage
+
+%% comment it out if you don't like it and/or use one of the lines below:
+%% \setstretch{2}
+%\setstretch{1.5}
+
+\tableofcontents
+\clearpage
+
+% \listoffigures
+% \clearpage
+
+% \listoftables
+% \clearpage
+
+% \newpage
+\chapter{Introducción}
+\label{chap:intro}
+\input{content/4_introduction.tex}
+\clearpage
+
+\chapter{Marco Teórico}
+\label{chap:mteorico}
+\input{content/5_marco_teorico.tex}
+\clearpage
+
+\chapter{Descripción del Problema}
+\label{chap:problem}
+\input{content/6_problem_description.tex}
+\clearpage
+
+\chapter{Solución Propuesta}
+\label{chap:solution}
+\input{content/7_solution.tex}
+\clearpage
+
+\chapter{Resultados}
+\label{chap:results}
+\input{content/8_results.tex}
+\clearpage
+
+\chapter{Trabajo futuro}
+\label{chap:futurework}
+\input{content/9_future_work.tex}
+\clearpage
+
+\chapter{Conclusiones}
+\label{chap:concl}
+\input{content/10_conclusions.tex}
+\newpage
+
+% \bibliographystyle{plain}
+\setstretch{1}
+\nocite{*}
+\printbibliography
+
+\end{document}
