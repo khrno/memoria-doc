@@ -1,0 +1,1768 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"concept-",
+				"concept-attributes"
+			],
+			[
+				"con",
+				"concept-navigation"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"id",
+				"idToKeep"
+			],
+			[
+				"sig",
+				"sigma-canvas"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"marin",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"fir",
+				"firstDifference"
+			],
+			[
+				"he",
+				"heightToken"
+			],
+			[
+				"pare",
+				"parentWidth"
+			],
+			[
+				"p",
+				"parentHeight"
+			],
+			[
+				"ja",
+				"jaccard_simmilarity"
+			],
+			[
+				"data",
+				"dataCuted"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"ba",
+				"background-size"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"attri",
+				"attributepane"
+			],
+			[
+				"res",
+				"resultsWrap"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"att",
+				"attributes"
+			],
+			[
+				"a",
+				"attributes"
+			],
+			[
+				"attr",
+				"attr"
+			],
+			[
+				"s",
+				"script"
+			],
+			[
+				"token",
+				"tokenStr"
+			],
+			[
+				"conce",
+				"concepts"
+			],
+			[
+				"simi",
+				"similarities"
+			],
+			[
+				"topi",
+				"topic_name"
+			],
+			[
+				"toip",
+				"topic_similarities"
+			],
+			[
+				"topic",
+				"topic_similarities"
+			],
+			[
+				"top",
+				"topic_name"
+			],
+			[
+				"si",
+				"similarities"
+			],
+			[
+				"load",
+				"loadTopics"
+			],
+			[
+				"latti",
+				"latticeName"
+			],
+			[
+				"lati",
+				"latticeName"
+			],
+			[
+				"write",
+				"writerow"
+			],
+			[
+				"outp",
+				"outputfilename"
+			],
+			[
+				"out",
+				"outputPath"
+			],
+			[
+				"outpu",
+				"outputFile"
+			],
+			[
+				"cal",
+				"calculateJaccardSimilarity"
+			],
+			[
+				"sim",
+				"simKey"
+			],
+			[
+				"lat",
+				"lattice"
+			],
+			[
+				"intent",
+				"intentAttr"
+			],
+			[
+				"file",
+				"filecmp"
+			],
+			[
+				"line",
+				"lineOriginal"
+			],
+			[
+				"l",
+				"lookup"
+			],
+			[
+				"do",
+				"docsFilename"
+			],
+			[
+				"exte",
+				"extentFilename"
+			],
+			[
+				"docu",
+				"documentIndexes"
+			],
+			[
+				"extet",
+				"extentIndex"
+			],
+			[
+				"docT",
+				"docTokens"
+			],
+			[
+				"tr",
+				"through"
+			],
+			[
+				"add",
+				"addAttribute"
+			],
+			[
+				"addNo",
+				"addNodeAttribute"
+			],
+			[
+				"get",
+				"getConceptById"
+			],
+			[
+				"qt",
+				"qtyFails"
+			],
+			[
+				"concept",
+				"conceptId"
+			],
+			[
+				"No",
+				"NoOptionError"
+			],
+			[
+				"Conf",
+				"ConfigParser"
+			],
+			[
+				"itne",
+				"intentId"
+			],
+			[
+				"tok",
+				"tokenId"
+			],
+			[
+				"at",
+				"attributesExtended"
+			],
+			[
+				"toke",
+				"tokensPath"
+			],
+			[
+				"show",
+				"showMenuExecuteAction"
+			],
+			[
+				"la",
+				"lattice"
+			],
+			[
+				"gex",
+				"gexfilename"
+			],
+			[
+				"stopwo",
+				"stopwords_pom"
+			],
+			[
+				"stopw",
+				"stopwordFile"
+			],
+			[
+				"tokens",
+				"tokens_filtered"
+			],
+			[
+				"sop",
+				"stopwordsfilename"
+			],
+			[
+				"stop",
+				"stopwordsfilename"
+			],
+			[
+				"sto",
+				"stopwordFile"
+			],
+			[
+				"conceptF",
+				"conceptFilenameIsLogged"
+			],
+			[
+				"concep",
+				"conceptDirectory"
+			],
+			[
+				"T",
+				"Tokenizer"
+			],
+			[
+				"concepts",
+				"conceptsToProcess"
+			],
+			[
+				"postag",
+				"postag"
+			],
+			[
+				"pos",
+				"posTags"
+			],
+			[
+				"itnent",
+				"intentIndex"
+			],
+			[
+				"menu",
+				"menuGetConceptById"
+			],
+			[
+				"lattice",
+				"latticeFilename"
+			],
+			[
+				"lo",
+				"logConcept"
+			],
+			[
+				"qty",
+				"qtyVerboseConcept"
+			],
+			[
+				"ext",
+				"extentIndex"
+			],
+			[
+				"ge",
+				"generateIntent"
+			],
+			[
+				"docs",
+				"docsInConcept"
+			],
+			[
+				"docsfile",
+				"docsfilename"
+			],
+			[
+				"wri",
+				"writerow"
+			],
+			[
+				"log",
+				"logFile"
+			],
+			[
+				"inten",
+				"intentAttr"
+			],
+			[
+				"Lattice",
+				"LatticeHandler"
+			],
+			[
+				"stat",
+				"statfilename"
+			],
+			[
+				"sta",
+				"statsfilename"
+			],
+			[
+				"str",
+				"strip"
+			],
+			[
+				"obj",
+				"object"
+			],
+			[
+				"ob",
+				"objects"
+			],
+			[
+				"nb",
+				"nb_inner_nodes"
+			],
+			[
+				"C",
+				"CurrentData"
+			],
+			[
+				"r",
+				"rstrip"
+			],
+			[
+				"sephi",
+				"sephirotfilename"
+			],
+			[
+				"skip",
+				"skipsephirot"
+			],
+			[
+				"expo",
+				"exportContextToSephirot"
+			],
+			[
+				"ski",
+				"skipsephirot"
+			],
+			[
+				"arg",
+				"argParser"
+			],
+			[
+				"model",
+				"modelPathname"
+			],
+			[
+				"coron",
+				"coroncontext"
+			],
+			[
+				"trans",
+				"transpose"
+			],
+			[
+				"generate",
+				"generateContext"
+			],
+			[
+				"ones",
+				"ones_counter"
+			],
+			[
+				"doc",
+				"docTokens"
+			],
+			[
+				"terms",
+				"termsfilename"
+			],
+			[
+				"termFre",
+				"termFrequency"
+			],
+			[
+				"termF",
+				"termFrequency"
+			],
+			[
+				"term",
+				"termFrequencyFilename"
+			],
+			[
+				"title",
+				"titleTokens"
+			],
+			[
+				"lda",
+				"ldatoptermsfilename"
+			],
+			[
+				"xml",
+				"xmlfilename"
+			],
+			[
+				"csv",
+				"csvfilename"
+			],
+			[
+				"X",
+				"X_red"
+			],
+			[
+				"output",
+				"outputFilename"
+			],
+			[
+				"conte",
+				"contextFile"
+			],
+			[
+				"num",
+				"numTerms"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/Makefile/Make.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/Makefile/Make.sublime-build",
+				"Clean"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "packa",
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"scala",
+				"Set Syntax: Scala"
+			],
+			[
+				"Set Syntax: Makefile",
+				"Set Syntax: Makefile"
+			],
+			[
+				"set syntax: make",
+				"Set Syntax: Makefile"
+			],
+			[
+				"set syntax:Ma",
+				"Set Syntax: Makefile"
+			],
+			[
+				"set synta",
+				"Set Syntax: Makefile"
+			],
+			[
+				"set syntax c",
+				"Set Syntax: C++"
+			],
+			[
+				"set syntax make",
+				"Set Syntax: Makefile"
+			],
+			[
+				"set syntax python",
+				"Set Syntax: Python"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"ssj",
+				"Set Syntax: JSON"
+			],
+			[
+				"set synax: json",
+				"Set Syntax: JSON"
+			],
+			[
+				"set syntax: ba",
+				"Set Syntax: Batch File"
+			],
+			[
+				"todo",
+				"Set Syntax: ToDone"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ssm",
+				"Set Syntax: MQL4"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"set syntax: json",
+				"Set Syntax: JSON"
+			],
+			[
+				"set syntax: python",
+				"Set Syntax: Python"
+			],
+			[
+				"set syntax:json",
+				"Set Syntax: JSON"
+			],
+			[
+				"set syntax twi",
+				"Set Syntax: HTML (Twig)"
+			],
+			[
+				"set syntax: twig",
+				"Set Syntax: HTML (Twig)"
+			],
+			[
+				"set syntax: php",
+				"Set Syntax: PHP"
+			],
+			[
+				"set syntax twig",
+				"Set Syntax: HTML (Twig)"
+			],
+			[
+				"SET SYNTAX: SQL",
+				"Set Syntax: SQL"
+			],
+			[
+				"set syntax: tw",
+				"Set Syntax: HTML (Twig)"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"set syntax sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"SET ",
+				"Set Syntax: SQL"
+			],
+			[
+				"set syntax: html",
+				"Set Syntax: HTML"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"paca",
+				"Package Control: Remove Package"
+			],
+			[
+				"set syntax py",
+				"Set Syntax: Python"
+			],
+			[
+				"twig",
+				"Set Syntax: HTML (Twig)"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"SIM",
+				"SimplestDebugger: Toggle"
+			],
+			[
+				"simples",
+				"SimplestDebugger: Toggle"
+			],
+			[
+				"run",
+				"SPARQL: Run query"
+			],
+			[
+				"pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"RUN",
+				"SPARQL: Run query"
+			],
+			[
+				"SPAR",
+				"SPARQL: Run query"
+			],
+			[
+				"set syntax: pyt",
+				"Set Syntax: Python"
+			],
+			[
+				"spar",
+				"SPARQL: Run query"
+			],
+			[
+				"tex",
+				"Set Syntax: LaTeX"
+			],
+			[
+				"spr",
+				"SPARQL: Run query"
+			],
+			[
+				"end ",
+				"SPARQL: Select endpoint"
+			],
+			[
+				"sparql",
+				"SPARQL: Select endpoint"
+			],
+			[
+				"sp",
+				"SPARQL: Run query"
+			],
+			[
+				"brows",
+				"Preferences: Browse Packages"
+			],
+			[
+				"sparq",
+				"SPARQL: Run query"
+			],
+			[
+				"sparl",
+				"SPARQL: Run query"
+			],
+			[
+				"set syntax: sparql",
+				"Set Syntax: SPARQL"
+			],
+			[
+				"set syntax: spar",
+				"Set Syntax: SPARQL"
+			],
+			[
+				"pakc",
+				"Package Control: Install Package"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"set syntax:spar",
+				"Set Syntax: SPARQL"
+			],
+			[
+				"Package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"setsyntax html",
+				"Set Syntax: HTML"
+			],
+			[
+				"set syntax html",
+				"Set Syntax: HTML"
+			],
+			[
+				"",
+				"Preferences: Browse Packages"
+			],
+			[
+				"set syntax hp",
+				"Set Syntax: PHP"
+			],
+			[
+				"set syntax h",
+				"Set Syntax: HTML"
+			],
+			[
+				"set syntax",
+				"Set Syntax: PHP"
+			],
+			[
+				"set syntax ",
+				"Set Syntax: CSS"
+			],
+			[
+				"set syna",
+				"Set Syntax: SQL"
+			],
+			[
+				"save",
+				"Project: Save As"
+			],
+			[
+				"set ",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set",
+				"Set Syntax: CSS"
+			],
+			[
+				"set syntax: css",
+				"Set Syntax: CSS"
+			],
+			[
+				"set Syntax: Py",
+				"Set Syntax: Python"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/index.html",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/concept.html",
+		"/Users/pablo/Sites/LatticeNetworks/0.0900/index.html",
+		"/Users/pablo/Sites/LatticeNetworks/0.0900/concept.html",
+		"/Users/pablo/Sites/LatticeNetworks/0.0090/concept.html",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/js/main.js",
+		"/Users/pablo/Sites/LatticeNetworks/0.0090/index.html",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/data/attributes/attrs_46.json",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/css/concept.css",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/concept.html",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/js/d3/d3.layout.cloud.js",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/index.html",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/css/style.css",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/css/extended.css",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/js/main.js",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/js/loadLattice.js",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/js/topicDistribution.js",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/exampledata.json",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/config.json",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/js/sigma-1.0.3/sigma.min.js",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/js/sigma/sigma.js",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/js/sigma-1.0.3/plugins/sigma.parsers.gexf.min.js",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/js/documentList.js",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/js/intentCloud.js",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/js/excanvas.js",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/data/tokens/tf_46.txt",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/data/tokens/tf_48.txt",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/data/tokens/tf_42.txt",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/data/tokens/tf_142.txt",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/data/tokens/tf_1.txt",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/data/lattice1.json",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/data.json",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/htaccess_example",
+		"/Users/pablo/Sites/LatticeNetworks/0.0900/network/css/extended.css",
+		"/Users/pablo/Sites/LatticeNetworks/0.0090/network/css/extended.css",
+		"/Users/pablo/Sites/LatticeNetworks/0.0900/network/js/main.js",
+		"/Users/pablo/Sites/LatticeNetworks/0.0090/network/js/main.js",
+		"/Users/pablo/Sites/LatticeNetworks/0.0090/network/index.html",
+		"/Users/pablo/Sites/LatticeNetworks/0.0900/network/index.html",
+		"/Users/pablo/Sites/Backup 2 Julio 2015/TESTEXPORTER/network/index.html",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/js/sigma/sigma.parseGexf.js",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/js/sigma/sigma.min.js",
+		"/Users/pablo/Sites/Lattices/Base/network/js/main.js",
+		"/Users/pablo/Sites/Lattices/index.html",
+		"/Users/pablo/Sites/Lattices/Base/network/js/sigma/sigma.parseJson.js",
+		"/Users/pablo/Sites/Lattices/Base/network/index.html",
+		"/Users/pablo/Sites/Lattices/Base/network/css/tablet.css",
+		"/Users/pablo/Sites/Lattices/src/sigma.js/plugins/sigma.parsers.gexf/gexf-parser.js",
+		"/Users/pablo/Sites/Lattices/sigma.1.0.3/plugins/sigma.parsers.gexf.min.js",
+		"/Users/pablo/Sites/Lattices/sigma.1.0.3/plugins/sigma.layout.forceAtlas2.min.js",
+		"/Users/pablo/Sites/Lattices/lattices/lattice.0.5000.gexf",
+		"/Users/pablo/Sites/Lattices/lattices/lattice.dblp.0.5000.ext.gexf",
+		"/Users/pablo/Sites/LatticeNetworks/0.5000/network/config.codekit",
+		"/Users/pablo/Sites/TESTEXPORTER/0.5000/network/index.html",
+		"/Users/pablo/Sites/TESTEXPORTER/0.5000/network/css/style.css",
+		"/Users/pablo/Sites/TESTEXPORTER/0.5000/network/js/fancybox/jquery.fancybox.css",
+		"/Users/pablo/Sites/TESTEXPORTER/0.5000/network/config.json",
+		"/Users/pablo/Sites/TESTEXPORTER/0.5000/network/js/main.js",
+		"/Users/pablo/Sites/TESTEXPORTER/network/config.json",
+		"/Users/pablo/Sites/TESTEXPORTER/network/js/main.js",
+		"/Users/pablo/Sites/TESTEXPORTER/network/htaccess_example",
+		"/Users/pablo/Sites/TESTEXPORTER/network/index.html",
+		"/Users/pablo/Desktop/SinatraTutorials/SinatraTutorial3/views/_partials/header.erb",
+		"/Users/pablo/Desktop/SinatraTutorials/SinatraTutorial3/app.rb",
+		"/Users/pablo/Desktop/SinatraTutorials/SinatraTutorial3/views/index.erb",
+		"/Users/pablo/Desktop/SinatraTutorials/SinatraTutorial3/public/sass/styles.scss",
+		"/Users/pablo/Desktop/SinatraTutorials/SinatraTutorial3/public/sass/_base.scss",
+		"/Users/pablo/Desktop/SinatraTutorials/SinatraTutorial3/public/sass/_bootstrap_custom.scss",
+		"/Users/pablo/Desktop/SinatraTutorials/SinatraTutorial3/public/sass/_bootstrap_variables.scss",
+		"/Users/pablo/Desktop/SinatraTutorials/SinatraTutorial2/config.ru",
+		"/Users/pablo/Desktop/SinatraTutorials/SinatraTutorial2/app.rb",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/LatticeBrowser/views/form.erb",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/LatticeBrowser/views/secret.erb",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/LatticeBrowser/basics.rb",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/Lattice",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/LatticeBrowser/app/views/site/index.html.erb",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/LatticeBrowser/config/routes.rb",
+		"/Users/pablo/Sites/MemoriaVIZ/index.html",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/ParserLattice.py",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/ApiLattice.py",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/Indexator.py",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/test.py",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/ConfigFiles/dblp.0.5000.ini",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/LatticeModels.py",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/LatticeHandler.py",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/CalculateJaccardSimilarity.py",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/ConfigFiles/dblp.0.0090.ini",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/ConfigFiles/dblp.0.0900.ini",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/Dataset/DBLP/ordered/0.0090/similarity/topics-concepts-similarity.log",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/ConfigFiles/dblp.ini",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/ExportLatticeToGEXF.py",
+		"/Users/pablo/Downloads/Suits - 01x11 - Rules Of The Game.srt",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/Dataset/DBLP/ordered/0.0090/log_files/concepts_processed.txt",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/Resources/Memoria Jorge Soto/codigo/Gemfile",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/Dataset/DBLP/ordered/0.0900/log_files/concepts_processed.txt",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/Dataset/DBLP/ordered/0.5000/log_files/concepts_processed.txt",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/ConceptExporter.py",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/Dataset/DBLP/ordered/0.5000/log_files/concepts_written.txt",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/validateNewVersion.py",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/GenerateFormalContext.py",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/stopwords_pom.txt",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/IntentExtendator.py",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/Dataset/DBLP/current/concepts_processed.txt",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/Dataset/DBLP/current/concepts/lattice.0.0900/c_502.txt",
+		"/Users/pablo/Desktop/c_502.txt",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/Dataset/DBLP/current/concepts_written.lattice.0.0900.txt",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/ConfigFiles/test.ini",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/extent46.txt",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/outputTest1_46.txt",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/outputTest2_46.txt",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/test.descriptor.txt",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/Dataset/DBLP/current/concepts/lattice.0.5000/c_46.txt",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/LatticeZoomIn.py",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/ConfigFiles/gexf.ini",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/Dataset/DBLP/current/gexf_files/lattice.dblp.0.0090.ext.reversed.gexf",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/Dataset/DBLP/current/gexf_files/animals.intent.gexf",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/Dataset/DBLP/current/gexf_files/animals.intent.reversed.gexf",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/ConfigFiles/animals.ini",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/Dataset/DBLP/current/gexf_files/animals.TEST.gexf",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/Dataset/DBLP/current/gexf_files/lattice.dblp.0.0090.ext.TEST.gexf",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/Dataset/DBLP/current/gexf_files/lattice.dblp.0.5000.ext.TEST.gexf",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/Dataset/DBLP/current/gexf_files/lattice.dblp.0.5000.ext.gexf",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/Dataset/DBLP/current/lattices/lattice.dblp.0.5000.ext.TEST.gexf",
+		"/Users/pablo/Downloads/hierarchy.rnc",
+		"/Users/pablo/Desktop/mensajes.txt",
+		"/Users/pablo/Desktop/e2noorden",
+		"/Users/pablo/Desktop/e1",
+		"/Users/pablo/Desktop/1 Universidad/1 - Memoria 2015/memoria2015/MemoriaV2/Dataset/DBLP/current/similarity/topics-concepts-similarity.dblp.0.5000.csv"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"",
+			"*.php",
+			"*.html",
+			"*.php",
+			"*.html",
+			"*.php",
+			"",
+			"*.php",
+			"*.html",
+			"*.php",
+			"",
+			"*.html",
+			"",
+			"*.html",
+			"*.html]",
+			"*.css",
+			"*.html",
+			"*.php",
+			"views/*.html",
+			"*.php",
+			"views/*.html",
+			"*.php",
+			".php",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"<a target=\"_blank\" href=\"../0.0090/index.html\">",
+			"<li><a target=\"_blank\" href=\"../0.0090/index.html\">0.0090</a></li>",
+			"network/",
+			"../",
+			"index",
+			"../",
+			"network/",
+			"../",
+			"network/",
+			"../",
+			"network",
+			"../",
+			"network",
+			"/concept",
+			"intentExtended",
+			"#intentExtended",
+			"#docs",
+			"tokens",
+			"level",
+			"right",
+			"46",
+			"			\n",
+			"213",
+			"rgb",
+			"navitation",
+			"dt",
+			"dl",
+			"next",
+			"sigma-canvas",
+			"sigma-parent",
+			"sigma-canvas",
+			"console.log",
+			"box-sigma",
+			"f",
+			"nodeActive",
+			"settings",
+			"curve",
+			");",
+			"defaultEdgeType",
+			"canvas",
+			"$currentElmnt.html((offset+1));",
+			"95em",
+			"primary",
+			"year",
+			"console.log",
+			"map",
+			"intent-cloud-box",
+			"type",
+			"end",
+			"draw",
+			"xScale",
+			"jaccard_simmilarity",
+			"div",
+			"defaultEdgeType",
+			"sigma-canvas",
+			"}",
+			";\n",
+			"col-lg-6 col-md-6 col-sm-12",
+			"portfolio-item",
+			"<!-- <a href=\"#\">\n				<img class=\"img-responsive\" src=\"http://placehold.it/700x400\" alt=\"\">\n			</a> -->",
+			"col-md-6",
+			"fixsize",
+			"padding",
+			"box-content",
+			"Cluster",
+			"$GP.cluster",
+			"Cluster",
+			"5000",
+			"Search(",
+			"this",
+			"Search(",
+			"search",
+			"hide",
+			"button",
+			"div",
+			"this.informationpane",
+			"button",
+			"div",
+			">\n",
+			"button",
+			"state",
+			"Search(",
+			"attributepane",
+			"Search",
+			"search",
+			"console",
+			"showCluster",
+			"bottom",
+			"top",
+			"console.log",
+			"defaultEdgeType",
+			"overflow",
+			"overflow: hidden; display: none;",
+			"atributepane",
+			"overflow",
+			"attributepane",
+			"line-height:12px",
+			"select",
+			"Group",
+			"dl",
+			"	 ",
+			"oii",
+			"Done opti",
+			"latticeFilename",
+			"l =",
+			"\nfrom sqlalchemy.orm import scoped_session, sessionmaker, Query\ndb_session = scoped_session(sessionmaker(bind=engine))\nfor item in db_session.query(Lattice.id, Lattice.name):\n	print item",
+			"0.0900",
+			"5000",
+			"2",
+			" '''",
+			"0900",
+			"0.5000",
+			"0900",
+			"os",
+			"is_file",
+			"\"\"",
+			"current",
+			"self.docs",
+			" \n",
+			"			\n",
+			"0900",
+			"<node id=\"0\"",
+			"0900",
+			"5000",
+			"\"]))\n",
+			"topicDistributionOrdered[i]",
+			",46,",
+			"row[0]"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			" ",
+			"dbh_front",
+			"dbh_prefront",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 293.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "memoria_portegam.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"issuecontenttypeproductcontroller",
+				"MovipaperAdmin/controllers/IssueContentTypeProductController.php"
+			],
+			[
+				"jquery.imgareaselect.pack.js",
+				"MovipaperAdmin/assets/js/jquery.imgareaselect/scripts/jquery.imgareaselect.pack.js"
+			],
+			[
+				"issuecontent",
+				"MovipaperAdmin/models/Issuecontent.php"
+			],
+			[
+				"isse",
+				"MovipaperAdmin/models/Issue.php"
+			],
+			[
+				"default/head-admin.inc.html",
+				"MovipaperAdmin/views/Default/head-admin.inc.html"
+			],
+			[
+				"default/admin.html",
+				"MovipaperAdmin/views/Default/admin.html"
+			],
+			[
+				"boot",
+				"MovipaperAdmin/assets/css/bootstrap.css"
+			],
+			[
+				"default/footer.inc.html",
+				"MovipaperAdmin/views/Default/footer.inc.html"
+			],
+			[
+				"bootstrap",
+				"MovipaperAdmin/assets/js/bootstrap.js"
+			],
+			[
+				"conte",
+				"MovipaperAdmin/models/Contextualmenu.php"
+			],
+			[
+				"jquery.fileupload.js",
+				"MovipaperAdmin/assets/js/jquery.fileupload.js"
+			],
+			[
+				"uploader",
+				"MovipaperAdmin/assets/css/uploader.css"
+			],
+			[
+				"issue",
+				"MovipaperAdmin/models/Issue.php"
+			],
+			[
+				"admin-web",
+				"MovipaperAdmin/css/admin-web.css"
+			],
+			[
+				"assets/css/uploader.css",
+				"MovipaperAdmin/assets/css/uploader.css"
+			],
+			[
+				"default/nav-admin.inc.html",
+				"MovipaperAdmin/views/Default/nav-admin.inc.html"
+			],
+			[
+				"create.",
+				"MovipaperAdmin/views/Issue/create.html"
+			],
+			[
+				"issuecon",
+				"controllers/IssueController.php"
+			],
+			[
+				"issuecontr",
+				"controllers/IssueController.php"
+			],
+			[
+				"issue/list",
+				"views/Issue/list.html"
+			],
+			[
+				"site",
+				"controllers/SiteController.php"
+			],
+			[
+				"issue/",
+				"views/Issue/create.html"
+			],
+			[
+				"admin-",
+				"css/admin-web.css"
+			],
+			[
+				"sitecon",
+				"controllers/SiteController.php"
+			],
+			[
+				"admin-w",
+				"css/admin-web.css"
+			],
+			[
+				"issuecont",
+				"controllers/IssuecontentController.php"
+			],
+			[
+				"issue/l",
+				"views/Issue/list.html"
+			],
+			[
+				"admin.css",
+				"css/admin-web.css"
+			],
+			[
+				"issue/ed",
+				"views/Issue/edit.html"
+			],
+			[
+				"i/man",
+				"views/Issuecontent/manage.html"
+			],
+			[
+				"issuecontent/mana",
+				"views/Issuecontent/manage.html"
+			],
+			[
+				"nav-admin.inc.html",
+				"MovipaperAdmin/views/Default/nav-admin.inc.html"
+			],
+			[
+				"login",
+				"main/view/login.py"
+			],
+			[
+				"webc",
+				"main/view/webcontact.py"
+			],
+			[
+				"urls.",
+				"hirefront/urls.py"
+			],
+			[
+				"login_hi",
+				"static/js/login_hirefront.js"
+			],
+			[
+				"login_hire",
+				"templates/registration/login_hirefront.html"
+			],
+			[
+				"estilos-advancefront",
+				"static/css/product-page/estilos-advancefront.css"
+			],
+			[
+				"login_ad",
+				"templates/registration/login_advancefront.html"
+			],
+			[
+				"login.py",
+				"main/view/login.py"
+			],
+			[
+				"login_my",
+				"templates/registration/login_myfront.html"
+			],
+			[
+				"urls.py",
+				"hirefront/urls.py"
+			],
+			[
+				"webconta",
+				"main/view/webcontact.py"
+			],
+			[
+				"estilos-myfront.css",
+				"static/css/product-page/estilos-myfront.css"
+			],
+			[
+				"estilos.",
+				"static/css/product-page/estilos.css"
+			],
+			[
+				"login_hirefront",
+				"static/js/login_hirefront.js"
+			],
+			[
+				"webcontact",
+				"static/js/webcontact/webcontact_validation.js"
+			],
+			[
+				"login_hiref",
+				"templates/registration/login_hirefront.html"
+			],
+			[
+				"webcon",
+				"templates/webcontact/webcontact.html"
+			],
+			[
+				"webcont",
+				"main/view/webcontact.py"
+			],
+			[
+				"login_myf",
+				"static/js/login_myfront.js"
+			],
+			[
+				"loginhirefront",
+				"templates/registration/login_hirefront.html"
+			],
+			[
+				"mytfront",
+				"templates/registration/login_myfront.html"
+			],
+			[
+				"urls",
+				"hirefront/urls.py"
+			],
+			[
+				"setting",
+				"hirefront/settings.py"
+			],
+			[
+				"functions",
+				"static/js/functions.js"
+			],
+			[
+				"settings",
+				"hirefront/settings.py"
+			],
+			[
+				"login_m",
+				"templates/registration/login_myfront.html"
+			],
+			[
+				"usuari",
+				"main/view/usuario.py"
+			],
+			[
+				"bootstrapvali",
+				"static/js/bootstrapValidator.js"
+			],
+			[
+				"s",
+				"hirefront/settings.py"
+			],
+			[
+				"usuario",
+				"main/view/usuario.py"
+			],
+			[
+				"estilos",
+				"static/css/product-page/estilos.css"
+			],
+			[
+				"estilos-",
+				"static/css/product-page/estilos-myfront.css"
+			],
+			[
+				"estilos-ad",
+				"static/css/product-page/estilos-advancefront.css"
+			],
+			[
+				"estilos-my",
+				"static/css/product-page/estilos-myfront.css"
+			],
+			[
+				"login_hir",
+				"templates/registration/login_hirefront.html"
+			],
+			[
+				"templates/dah",
+				"templates/dashboard/dashboard.html"
+			],
+			[
+				"static/js/",
+				"static/js/bootstrapValidator.backup.js"
+			],
+			[
+				"static/js/boo",
+				"static/js/bootstrapValidator.js"
+			],
+			[
+				"bootstrapval",
+				"static/js/bootstrapValidator.js"
+			],
+			[
+				"js/niveles_",
+				"static/js/niveles_evaluacion/object_form.js"
+			],
+			[
+				"niveles_evaluacion/ob",
+				"templates/niveles_evaluacion/object_form.html"
+			],
+			[
+				"js/niveles_evaluacion/",
+				"static/js/niveles_evaluacion/list.js"
+			],
+			[
+				"niveles_evaluacion/list",
+				"templates/niveles_evaluacion/list.html"
+			],
+			[
+				"goals",
+				"templates/employee/fdp/tabs/goals_evaluation.html"
+			],
+			[
+				"emplo",
+				"main/view/employee.py"
+			],
+			[
+				"evaluacion-comp",
+				"static/employee/evaluacion-competencias/js/evaluacion-competencias.js"
+			],
+			[
+				"static/employee/objeetiv",
+				"static/employee/objetivos/js/objetivos.js"
+			],
+			[
+				"templates/employee/fdp/bas",
+				"templates/employee/fdp/base.html"
+			],
+			[
+				"templates/employee/fdp/tabs/",
+				"templates/employee/fdp/tabs/objetivos.html"
+			],
+			[
+				"templates/employee/details/details",
+				"templates/employee/details/details.html"
+			],
+			[
+				"templates/",
+				"templates/403.html"
+			],
+			[
+				"tdp",
+				"static/employee/tdp/js/tdp.js"
+			],
+			[
+				"s/js/bo",
+				"static/js/bootstrapValidator.js"
+			],
+			[
+				"templates/tdp/",
+				"templates/employee/tdp/form.html"
+			],
+			[
+				"static/employee/tdp/",
+				"static/employee/tdp/js/tdp.js"
+			],
+			[
+				"static/js/emplo",
+				"static/js/employeeProfile.js"
+			],
+			[
+				"t/e/fdp/base",
+				"templates/employee/fdp/base.html"
+			],
+			[
+				"static/bootstrap",
+				"static/js/bootstrapValidator.js"
+			],
+			[
+				"template/employee/fdp/base",
+				"templates/employee/fdp/base.html"
+			],
+			[
+				"template/employee/goal",
+				"templates/employee/fdp/tabs/goals_evaluation.html"
+			],
+			[
+				"template/employee/details",
+				"templates/employee/details/details.html"
+			],
+			[
+				"static/employee/tdp",
+				"static/employee/tdp/js/tdp.js"
+			],
+			[
+				"main/employee",
+				"main/view/employee.py"
+			],
+			[
+				"static/employee/tdp/js/tdp.js",
+				"static/employee/tdp/js/tdp.js"
+			],
+			[
+				"templates/employee/base",
+				"templates/employee/fdp/base.html"
+			],
+			[
+				"templates/employee/tabs/goals",
+				"templates/employee/fdp/tabs/goals_evaluation.html"
+			],
+			[
+				"main/emplo",
+				"main/view/employee.py"
+			],
+			[
+				"templates/employee/goal",
+				"templates/employee/fdp/tabs/goals_evaluation.html"
+			],
+			[
+				"templates/employee/details/forms/",
+				"templates/employee/details/forms/form_posicion.html"
+			],
+			[
+				"static/js/empl",
+				"static/js/employeeProfile.js"
+			],
+			[
+				"templates/employee/deta",
+				"templates/employee/details/details.html"
+			],
+			[
+				"templatetags/pro",
+				"main/templatetags/process_extras.py"
+			],
+			[
+				"",
+				"templates/employee/objetivos/_objetivo.html"
+			],
+			[
+				"templates/employee/objetivos/_",
+				"templates/employee/objetivos/_objetivo.html"
+			],
+			[
+				"static/employee/tdp/js/",
+				"static/employee/tdp/js/tdp.js"
+			],
+			[
+				"templates/employee/tdp/list",
+				"templates/employee/tdp/tdp_list.html"
+			],
+			[
+				"hirefront/url",
+				"hirefront/urls.py"
+			],
+			[
+				"templates/employee/fdp/tabs/goals",
+				"templates/employee/fdp/tabs/goals_evaluation.html"
+			],
+			[
+				"templates/employee/fdp/base.html",
+				"templates/employee/fdp/base.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 286.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
