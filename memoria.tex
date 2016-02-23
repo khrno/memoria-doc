@@ -19,11 +19,22 @@
 %%%%%%%% 					 Configurations						%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Chapter title style
-\titleformat{\chapter}[display]
-	{\bfseries\Large}
-	{\filleft\MakeUppercase{\chaptertitlename} \Huge\thechapter}
-	{4ex}
-	{\titlerule \vspace{2ex}\filright}
+%\titleformat{\chapter}[display]
+%	{\bfseries\Large}
+%	{\filleft\MakeUppercase{\chaptertitlename} \Huge\thechapter}
+%	{4ex}
+%	{\titlerule \vspace{2ex}\filright}
+\titleformat
+{\chapter}
+[display]
+{\bfseries\small}
+{\filleft\MakeUppercase{\chaptertitlename} \Large\thechapter}
+{0ex}
+{\bfseries\Huge\filleft\MakeUppercase }
+[\vspace{-2ex}\rule{\textwidth}{1pt}]
+
+
+
 
 % Redefine command cleardoublepage like clearpage
 \let\cleardoublepage\clearpage
@@ -176,11 +187,11 @@ This work aims to generate a smooth hierarchical clustering by \abr{FCA} and obs
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Introducción}
 \pagenumbering{arabic}
-En la actualidad, el uso masivo de Internet y sus redes de comunicación han provocado un crecimiento explosivo en la información que se puede encontrar en línea. Millones de páginas proveen a usuarios con innumerables contenidos, donde cada cuál contiene múltiples tópicos, de los cuales pueden llegar a ser relevantes o no para los usuarios. Es por esto que realizar una búsqueda por un tema muy específico, puede llevar demandar un gran consumo de tiempo y recursos.
+En la actualidad, el uso masivo de Internet y sus redes de comunicación han provocado un crecimiento explosivo en la información que se puede encontrar en línea. Millones de páginas proveen a usuarios con innumerables contenidos, donde cada cual contiene múltiples tópicos, de los cuales pueden llegar a ser relevantes o no para los usuarios. Es por esto que realizar una búsqueda por un tema muy específico, puede llevar demandar un gran consumo de tiempo y recursos.
 
 Junto a lo anterior, cada vez es más fácil el acceso a esta información por parte de los usuarios. Prácticamente lo único que se requiere es una conexión a Internet para tener acceso a una cantidad inconmensurable de información. Esto produce que se vayan conformando comunidades de usuarios en torno a ciertos tópicos de información. Estas comunidades de usuarios en los últimos años han adquirido una vital importancia para muchas áreas. Por ejemplo, en el área de la publicidad es útil para segmentar el mercado a quién dirigir las campañas publicitarias y así saber a qué publico objetivo ofrecer los productos, así un sinfín de consecuencias pueden ser observadas de acuerdo a estas comunidades de usuarios.
 
-Particularmente, una de estas comunidades de usuarios es la comunidad científica, la cual es conformada por todos aquellos que deseen obtener o contribuir información en formato de artículos científicos en torno a un área de investigación. Dentro de la información que maneja esta comunidad, se encuentran cientos de años de historia científica en donde se pueden apreciar grandes descubrimientos y propuestas de nuevas técnicas, teóricas, entre otras cosas. Los científicos, para poder desarrollar sus investigaciones, requieren consumir una cantidad importante de conocimiento entregado por estos artículos, por lo que, la comunidad científica tiene la necesidad de tener nuevas herramientas que le permitan explorar y navegar a través de grandes colecciones de documentos científicos.
+Particularmente, una de estas comunidades de usuarios es la comunidad científica, la cual es conformada por todos quienes que deseen obtener o contribuir información en formato de artículos científicos en torno a un área de investigación. Dentro de la información que maneja esta comunidad, se encuentran cientos de años de historia científica en donde se pueden apreciar grandes descubrimientos y propuestas de nuevas técnicas, teóricas, entre otras cosas. Los científicos, para poder desarrollar sus investigaciones, requieren consumir una cantidad importante de conocimiento entregado por estos artículos, por lo que, la comunidad científica tiene la necesidad de tener nuevas herramientas que le permitan explorar y navegar a través de grandes colecciones de documentos científicos.
 
 Para lograr esto, organizaciones como JSTOR\footnote{\url{http://www.jstor.org/}} o DBLP\footnote{\url{http://dblp.uni-trier.de/db/}} mantienen en sus bases de datos grandes cantidades de publicaciones científicas, las cuales cubren cientos de años de investigación. El objetivo de estas organizaciones no es almacenar la documentación científica completa, mas bien, intentan mantener una enorme \emph{colección bibliográfica} de alta calidad.
 
@@ -191,6 +202,8 @@ Efectivamente, la comunidad científica requiere interactuar con estas grandes c
 Sin embargo, el principal problema es la generación de una estructura que permita indexar los tópicos contenidos en un documento con otros que tengan el mismo tipo de tópicos. Dicha tarea no es posible hacerlo manualmente en la mayoría de las colecciones modernas debido al tamaño y la tasa de crecimiento. Por lo que, para desarrollar las herramientas necesarias para explorar y navegar las grandes librerías científicas digitales, se requiere métodos automáticos que permitas organizar, administrar y entregar los contenidos de las mismas.
 
 Es por esto que en este trabajo se intentará resolver las problemáticas planteadas: alta dimensionalidad de los datos debido al gran tamaño y rápido crecimiento de las colecciones de artículos científicos, descubrimiento de tópicos emergentes entre los documentos, clasificación y organización de estos tópicos y navegación a través de la clasificación resultante para poder dar al científico un punto de partida para que pueda buscar los artículos que son de su interés.
+
+En el presente trabajo se puede encontrar una descripción del marco teórico utilizado en el \autoref{chap:marco_teorico}. A continuación, en el \autoref{chap:problem_description} se presenta la descripción del problema que este trabajo aborda. Después se puede encontrar el planteamiento de la solución propuesta en el \autoref{chap:solution_proposal}. Para terminar, se presentan los resultados obtenidos en el \autoref{chap:results} y al finalizar este documento se pueden encontrar las conclusiones en el \autoref{chap:conclutions}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -221,6 +234,7 @@ entre sí.
 %%%%%%%% 					Marco Teórico 						%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Marco Teórico}
+\label{chap:marco_teorico}
 \section{\abr{DBLP}}
 \label{sec:dblp}
 \abr{DBLP} (\eng{Digital Bibliography and Library Project})~\cite{DBLPLey2002} es un sitio web que posee una gran cantidad de documentación bibliográfica de artículos relacionados con ciencias de la computación. El sitio está alojado en la Universidad de Trier, Alemania. Originalmente, en los años 80's, fue una base de datos que almacenó referencias relacionadas con programación lógica. Actualmente, DBLP lista más de un millón de artículos: Algunos de ellos pertenecientes a \abr{VLDB} (\eng{Very Large Database}, en inglés; una revista acerca de bases de datos con mucho contenido), artículos de la \abr{IEEE} y \abr{ACM}, así como también artículos científicos de distintas conferencias.
@@ -561,6 +575,7 @@ El modelo representado en la Figura~\ref{fig:lda} muestra como es posible genera
 %%%%%%%% 				Descripción de Problemas 				%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Descripción de Problemas}
+\label{chap:problem_description}
 \section{Base de Datos Científicas}
 \label{sec:base_de_datos_cientificas}
 
@@ -593,6 +608,7 @@ Manejar grandes \eng{datasets} a sido definido como uno de los problemas abierto
 %%%%%%%% 					Solución Propuesta					%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Solución Propuesta}
+\label{chap:solution_proposal}
 \section{DBLP}
 \label{sec:sol_dblp}
 La utilización de la base de datos científica que ofrece DBLP, se debe a que es una base de datos estructurada (en formato XML), está disponible para la descarga libremente, y además se encuentra bien documentada. Las características que permiten escoger a \abr{DBLP} frente a otras colecciones científicas son:
@@ -1030,6 +1046,7 @@ Además, cada nivel tiene sus conceptos ordenados por el valor del soporte de ca
 %%%%%%%% 						Resultados 						%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Resultados}
+\label{chap:results}
 \section{\eng{Lattices} Generados}
 A través de la implementación de este trabajo, se probó con diferentes valores del parámetro \eng{minsupp}, para poder tener una observación tangible de cuán sensible es el \eng{iceberg lattice} a la elección de este parámetro.
 
@@ -1169,6 +1186,7 @@ Por otro lado, la sección ilustrada por la figura \ref{fig:results_9} indica la
 %%%%%%%% 					Conclusiones 						%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Conclusiones}
+\label{chap:conclutions}
 Durante el desarrollo del presente trabajo fue posible generar una clusterización jerárquica suave de una gran colección de documentos científicos, utilizando dos técnicas separadamente para enfrentar el gran problema de la dimensionalidad de los datos. De esta forma, se logró comprobar que existen modelos matemáticos que por si solos o son lo suficientemente capaces de manejar grandes cantidades de información, como es el caso de \abr{FCA}, sin embargo, al utilizarlos junto a otros modelos estadísticos, particularmente \abr{LDA}, forman una gran dupla que permiten resolver - al menos de modo parcial - uno de los principales problemas que existen en el día de hoy: una inconmensurable cantidad de información y una alta aceleración en la producción de la misma.
 
 Por otro lado, si se observa cuidadosamente los resultados obtenidos, se puede comprobar que si existe una relación adecuada entre los resultados de la técnica \abr{LDA} y los resultados de la técnica \abr{FCA}. Como por ejemplo, si se toma el caso particular el concepto que tiene id $46$ (Figura \ref{fig:conclusiones_1}), se puede observar que los \eng{tokens} más relevantes del concepto son: ``\eng{Video}'', ``\eng{Coding}'', ``\eng{image}'', los cuales tiene mucha relación como descriptores de los tópicos ``\eng{Multimedia}'' y ``\eng{Telecommunications}'' que corresponden a ser los que mayor relación tienen con el concepto.
