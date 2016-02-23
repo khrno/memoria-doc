@@ -15,6 +15,9 @@
 \usepackage{algpseudocode}
 \usepackage{pifont}
 \usepackage{listings}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%% 					 Configurations						%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -31,7 +34,7 @@
 {\filleft\MakeUppercase{\chaptertitlename} \Large\thechapter}
 {0ex}
 {\bfseries\Huge\filleft\MakeUppercase }
-[\vspace{-2ex}\rule{\textwidth}{1pt}]
+[\vspace{0ex}\rule{\textwidth}{1pt}]
 
 
 
@@ -70,7 +73,13 @@
 % New beta uppercase
 \newcommand{\Beta}{\mathcal{B}}
 
- \floatname{algorithm}{Algoritmo}
+\floatname{algorithm}{Algoritmo}
+
+\fancypagestyle{plain2}{ %
+  \fancyhf{} % remove everything
+  \renewcommand{\headrulewidth}{0pt} % remove lines as well
+  \renewcommand{\footrulewidth}{0pt}
+}
 
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -170,23 +179,17 @@ This work aims to generate a smooth hierarchical clustering by \abr{FCA} and obs
 \end{itemize}
 \clearpage
 
-
+\pagestyle{plain2}
 \tableofcontents
 \clearpage
-% \listoffigures
-% \clearpage
-% \listoftables
-% \clearpage
-
-
 \endgroup
+
+\pagestyle{fancy}
 \setcounter{page}{1}
-\pagenumbering{roman}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%% 					Introducción 						%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Introducción}
-\pagenumbering{arabic}
 En la actualidad, el uso masivo de Internet y sus redes de comunicación han provocado un crecimiento explosivo en la información que se puede encontrar en línea. Millones de páginas proveen a usuarios con innumerables contenidos, donde cada cual contiene múltiples tópicos, de los cuales pueden llegar a ser relevantes o no para los usuarios. Es por esto que realizar una búsqueda por un tema muy específico, puede llevar demandar un gran consumo de tiempo y recursos.
 
 Junto a lo anterior, cada vez es más fácil el acceso a esta información por parte de los usuarios. Prácticamente lo único que se requiere es una conexión a Internet para tener acceso a una cantidad inconmensurable de información. Esto produce que se vayan conformando comunidades de usuarios en torno a ciertos tópicos de información. Estas comunidades de usuarios en los últimos años han adquirido una vital importancia para muchas áreas. Por ejemplo, en el área de la publicidad es útil para segmentar el mercado a quién dirigir las campañas publicitarias y así saber a qué publico objetivo ofrecer los productos, así un sinfín de consecuencias pueden ser observadas de acuerdo a estas comunidades de usuarios.
@@ -204,12 +207,11 @@ Sin embargo, el principal problema es la generación de una estructura que permi
 Es por esto que en este trabajo se intentará resolver las problemáticas planteadas: alta dimensionalidad de los datos debido al gran tamaño y rápido crecimiento de las colecciones de artículos científicos, descubrimiento de tópicos emergentes entre los documentos, clasificación y organización de estos tópicos y navegación a través de la clasificación resultante para poder dar al científico un punto de partida para que pueda buscar los artículos que son de su interés.
 
 En el presente trabajo se puede encontrar una descripción del marco teórico utilizado en el \autoref{chap:marco_teorico}. A continuación, en el \autoref{chap:problem_description} se presenta la descripción del problema que este trabajo aborda. Después se puede encontrar el planteamiento de la solución propuesta en el \autoref{chap:solution_proposal}. Para terminar, se presentan los resultados obtenidos en el \autoref{chap:results} y al finalizar este documento se pueden encontrar las conclusiones en el \autoref{chap:conclutions}.
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%% 					Objetivos	 						%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Objetivos}
+\label{chap:goals}
 \section{Objetivo General}
 \label{sec:objetivo_general}
 El objetivo principal de la memoria es la construcción de un grafo coloreado
