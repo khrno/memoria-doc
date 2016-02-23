@@ -206,7 +206,42 @@ Sin embargo, el principal problema es la generación de una estructura que permi
 
 Es por esto que en este trabajo se intentará resolver las problemáticas planteadas: alta dimensionalidad de los datos debido al gran tamaño y rápido crecimiento de las colecciones de artículos científicos, descubrimiento de tópicos emergentes entre los documentos, clasificación y organización de estos tópicos y navegación a través de la clasificación resultante para poder dar al científico un punto de partida para que pueda buscar los artículos que son de su interés.
 
-En el presente trabajo se puede encontrar una descripción del marco teórico utilizado en el \autoref{chap:marco_teorico}. A continuación, en el \autoref{chap:problem_description} se presenta la descripción del problema que este trabajo aborda. Después se puede encontrar el planteamiento de la solución propuesta en el \autoref{chap:solution_proposal}. Para terminar, se presentan los resultados obtenidos en el \autoref{chap:results} y al finalizar este documento se pueden encontrar las conclusiones en el \autoref{chap:conclutions}.
+
+En el presente documento durante el \autoref{chap:problem_description} se presenta la definición de los problemas que se intentan abordar. A continuación, en el \autoref{chap:goals} se presentan los objetivos establecidos para este trabajo. Luego, en el \autoref{chap:marco_teorico}, se puede encontrar una descripción del marco teórico utilizado. Después se puede encontrar el planteamiento de la solución propuesta en el \autoref{chap:solution_proposal}. Para terminar, se presentan los resultados obtenidos en el \autoref{chap:results} y al finalizar este documento se pueden encontrar las conclusiones en el \autoref{chap:conclutions}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% 				Descripción de Problemas 				%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Descripción de Problemas}
+\label{chap:problem_description}
+\section{Base de Datos Científicas}
+\label{sec:base_de_datos_cientificas}
+
+% La comunidad científica consume grandes cantidades de información a través de diferentes fuentes, en donde podemos encontrar artículos de revistas, libros, tesis, bases de datos, conferencias y colaboraciones entre muchas otras. Particularmente, los artículos de revistas son la principal fuente de información para científicos. Por ejemplo, los ``Físicos'' leen un promedio de 204 artículos por año, mientras que los ``Químicos'' leen aproximadamente 276 artículos por año. Además, los científicos y médicos leen tres veces mas artículos de revistas que los profesionales de áreas legales, administración y ventas. Para encontrar estos artículos, los científicos buscan a través de revistas o buscan en base de datos bibliográficos. Por ejemplo, \eng{PubMed}\footnote{\url{http://www.ncbi.nlm.nih.gov/pubmed}} (\eng{National Library of Medicine}) tiene entre $500.000$ y $1.000.000$ búsquedas cada día.  
+Una importante actividad de la comunidad científica es mantenerse al tanto de las investigaciones actuales dentro
+del área donde trabajan. Los científicos utilizan muchas formas de comunicación, herramientas y servicios para encontrar artículos relevantes ~\cite{hoggan2002, tenopir2001}.
+
+Una biblioteca, es una colección de registros del conocimiento humano, la cual es la mayor fuente de información para científicos. Los bibliotecarios sirven como mediadores entre los humanos y la colección bibliográfica en orden de maximizar la utilización de registros para el beneficio de la sociedad ~\cite{marsterson1986}.
+
+La organización, el proceso y la funcionalidad de una biblioteca ha ido cambiando dramáticamente con la introducción de la tecnología, especialmente con la Web ~\cite{saunders1993}. Estos cambios han tenido un gran impacto en las formas que los científicos realizan sus investigaciones.
+
+La Web provee un nuevo medio para almacenar, presentar, reunir, compartir, procesar y utilizar la información. Lleva a una nueva era de la información. Ahí hay una tremenda cantidad de material \eng{online} como periódicos, películas, música, revistas, y muchos otros productos y servicios. Conceptualmente, la Web puede ser observada como una gigante biblioteca virtual que permite búsquedas ~\cite{saunders1993}. Para realizar un uso efectivo de la Web para la comunidad científica produce un gran desafío.
+
+Los científicos encaran muchos desafíos usando recursos basados en la Web para encontrar estos artículos, como son por ejemplo: sobrecarga de información, desinformación, pagos, navegación pobremente diseñada y herramientas de navegación y recuperación ~\cite{hoggan2002}. Existe una necesidad urgente de nuevos sistemas de información que soporten actividades de investigación académica y jueguen el rol de los tradicionales bibliotecarios.
+
+Los sistemas de recuperación de información basados en la Web (\abr{WIRSS} por sus siglas en inglés) ayudan a las actividades básicas de científicos, como son recuperación, exploración, organización y utilización de la información en la Web ~\cite{yao2003web,yao2002information}. El objetivo de los \abr{WIRSS} para científicos es construir nuevas y mas eficientes herramientas de investigación para que la misma comunidad tome la ventaja de utilizar la Web. Con estas herramientas, la Web para la comunidad científica puede ser vista como una grande y personalizada base de conocimiento.
+
+Una vez identificada las necesidades de un \abr{WIRSS}, es tentador el paso siguiente, crear nuevas teorías y construir nuevos sistemas. Sin embargo, el gran número de sistemas implementados que existen, comparados con la pequeña cantidad que en la práctica se ocupan sugiere que esta no podría ser la mejor opción. Es por esta razón que es útil pensar en un nuevo enfoque, como es el caso de un ``Caso de Estudio''. Particularmente, uno de los sitios mas usados como fuente bibliográfica es \abr{DBLP} ~\cite{yin2013case}.  
+
+\section{Dimensionalidad}
+\label{sec:dimensionalidad}
+La cantidad de artículos que se encuentra disponible en Internet está creciendo cada año. Esto provoca una dificultad para mantener realizar un seguimiento a tendencias, seguir ideas, buscar nuevas terminologías, etc. Aunque algunas comunidades entienden la necesidad de tener un artefacto que represente el conocimiento de un determinado dominio como son las ontologías, cuerpos de conocimiento o incluso las taxonomías, el principal problema radica el costo de la construcción de estos artefactos: es muy difícil (por el nivel técnico requerido), caros (investigadores escasos) y  complejos (información dinámica) ~\cite{codocedo2011cheating}.
+
+El problema particular de la creación automática o semi-automática de taxonomías ha sido abordado por los trabajos ~\cite{cimiano2005learning,dakka2005automatic,kominek1997accessing,yeh2008ontology}. Sin embargo, en este trabajo se abordará el enfoque de Roth et al. ~\cite{roth2008towards} en donde la taxonomía es obtenida a través de los cuerpos de los documentos a través de la técnica \eng{Formal Concept Analysis}. En dicho trabajo, se utiliza un conjunto de \eng{abstracts} de la ``comunidad embrióloga'' obtenida a través de \abr{MedLine} a lo largo de 5 años donde contiene un conjunto aleatorio de 25 autores y 18 términos a analizar. A pesar que los resultados del trabajo mencionado son una representación fiable del dominio, los tamaños de las colecciones de artículos científicos reales que se trata de abarcar en este trabajo son mucho mayores.
+
+Manejar grandes \eng{datasets} a sido definido como uno de los problemas abiertos en la comunidad de \abr{FCA}\footnote{\url{http://www.upriss.org.uk/fca/problems06.pdf}} por dos razones principales: primero, los costos computacionales involucrados en el calculo del \eng{concept lattice} puede provocar que el uso de \abr{FCA} sea prohibitivo para grandes colecciones. Y segundo, el \eng{concept lattice} puede ser tan complejo que sea imposible de utilizar como herramienta para facilitar la navegación y búsqueda de documentos científicos. 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%% 					Objetivos	 						%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -238,7 +273,11 @@ Con esto se busca descubrir conocimiento que está latente en la colección text
 \label{chap:marco_teorico}
 \section{\abr{DBLP}}
 \label{sec:dblp}
-\abr{DBLP} (\eng{Digital Bibliography and Library Project})~\cite{DBLPLey2002} es un sitio web que posee una gran cantidad de documentación bibliográfica de artículos relacionados con ciencias de la computación. El sitio está alojado en la Universidad de Trier, Alemania. Originalmente, en los años 80's, fue una base de datos que almacenó referencias relacionadas con programación lógica. Actualmente, DBLP lista más de un millón de artículos: Algunos de ellos pertenecientes a \abr{VLDB} (\eng{Very Large Database}, en inglés; una revista acerca de bases de datos con mucho contenido), artículos de la \abr{IEEE} y \abr{ACM}, así como también artículos científicos de distintas conferencias.
+\abr{DBLP} (\eng{Digital Bibliography and Library Project})~\cite{DBLPLey2002} es un sitio web alojado en la Universidad de Trier, Alemania, en donde existe una gran cantidad de documentación bibliográfica de artículos relacionados con ciencias de la computación.
+
+Originalmente, en los años 80's, fue una base de datos que almacenó referencias relacionadas con programación lógica. Actualmente, DBLP lista más de un millón de artículos: algunos de ellos pertenecientes a \abr{VLDB} (\eng{Very Large Database}, en inglés; una revista acerca de bases de datos con mucho contenido), artículos de la \abr{IEEE} y \abr{ACM}, así como también artículos científicos de distintas conferencias.
+
+Actualmente, el sitio web tiene una funcionalidad que permite navegar entre los artículos que se encuentran indexados en el sitio, llamada \eng{DBL-Browser} (\eng{Digital Bibliographic Library Browser}) 
 
 \section{FCA}
 \label{sec:fca}
@@ -252,6 +291,7 @@ La segunda salida de \abr{FCA} es una colección de ``implicaciones de los atrib
 
 En relación con el procesamiento conceptual de data y conocimiento, \abr{FCA} tiene una integración inherente en tres componentes:
 \begin{itemize}
+\setlength{\itemindent}{.1in}
 	\item Descubrimiento de conceptos en los datos.
 	\item Descubrimiento de dependencia en los datos.
 	\item Visualización de datos, conceptos, y dependencias con ciertas capacidades las cuales pueden estar presentes o no.
@@ -261,12 +301,12 @@ La integración de estos tres componentes, hace a \abr{FCA} una herramienta pode
 
 \subsection{Primer Ejemplo utilizando \abr{FCA}} % (fold)
 \label{sub:primer_ejemplo}
-Una tabla d atributos lógicos se puede representar por la tripleta $\langle X,Y,I \rangle$ donde $I$ es la relación binaria entre $X$ e $Y$. Los elementos de $X$ son llamados objetos y corresponden a las filas de la tabla. Por otro lado, los elementos de $Y$ son llamados atributos y corresponden a las columnas de la tabla.
+Una tabla de atributos lógicos se puede representar por la tripleta $\langle X,Y,I \rangle$ donde $I$ es la relación binaria entre $X$ e $Y$. Los elementos de $X$ son llamados objetos y corresponden a las filas de la tabla. Por otro lado, los elementos de $Y$ son llamados atributos y corresponden a las columnas de la tabla.
 
 Además, para $x \in X$ e $y \in Y$, $\langle x,y\rangle \in I$ indica que el objeto $x$ tiene el atributo $y$. Mientras que $\langle x,y \rangle \notin I$ indica que $x$ no tiene $y$.
 
 \clearpage
-Por ejemplo, la Tabla~\ref{tbl:table_logical_attributes} (izquierda) representa una tabla con atributos lógicos. La correspondiente tripleta $\langle X,Y,I \rangle$ está dada por $X = \{x_1,x_2,x_3, x_4\}$, $Y = \{y_1,y_2,y_3\}$ y se tiene que $\langle x_1,y_1 \rangle \in I$, $\langle x_2,y_3 \rangle \notin I$, etc.
+
 \begin{table}[h!]
 	\centering
 	\begin{minipage}[b]{0.49\textwidth}
@@ -297,7 +337,9 @@ Por ejemplo, la Tabla~\ref{tbl:table_logical_attributes} (izquierda) representa 
 	\label{tbl:table_logical_attributes}
 \end{table}
 
-La representación las tablas de atributos lógicos como tripletas es muy común en \abr{FCA} y se menciona solo ``tabla $\langle X,Y,I \rangle$'' en vez de ``tripleta $\langle X,Y,I \rangle$ representante de la tabla dada''. \abr{FCA} busca obtener dos salidas de esa tabla. La primera llamada \eng{Concept Lattice} es una colección parcialmente ordenada de clústeres particulares de objetos y atributos. La segunda salida consiste en formulas llamadas \eng{attribute implications}, las cuales describen las dependencias de atributos particulares que se cumplen en la la información proporcionada por la tabla.
+Por ejemplo, la Tabla~\ref{tbl:table_logical_attributes} (izquierda) representa una tabla con atributos lógicos. La correspondiente tripleta $\langle X,Y,I \rangle$ está dada por $X = \{x_1,x_2,x_3, x_4\}$, $Y = \{y_1,y_2,y_3\}$ y se tiene que $\langle x_1,y_1 \rangle \in I$, $\langle x_2,y_3 \rangle \notin I$, etc.
+
+La representación las tablas de atributos lógicos como tripletas es muy común en \abr{FCA} y se menciona solo ``tabla $\langle X,Y,I \rangle$'' en vez de ``tripleta $\langle X,Y,I \rangle$ representante de la tabla dada''. \abr{FCA} busca obtener dos salidas de esa tabla. La primera llamada \eng{Concept Lattice} es una colección parcialmente ordenada de clústeres particulares de objetos y atributos. La segunda salida consiste en fórmulas llamadas \eng{attribute implications}, las cuales describen las dependencias de atributos particulares que se cumplen en la la información proporcionada por la tabla.
 
 Los clústeres, llamados \eng{Formal Concepts}, son pares $\langle A,B \rangle$ donde $A \subseteq X$ es un conjunto de objetos y $B \subseteq Y$ es un conjunto de atributos. Tal que $A$ es un conjunto de todos los objetos que tienen todos los atributos de $B$, y por otra parte, $B$ es el conjunto de todos los atributos que son comunes en todos los objetos de $A$. Por ejemplo, $\langle \{x_1, x_2\}, \{y_1, y_2\} \rangle$ y $\langle \{x_1, x_2, x_3\}, \{y_2\} \rangle$ son ejemplos de \eng{formal concepts} de la tabla~\ref{tbl:table_logical_attributes} izquierda (al menos la parte visible).
 
@@ -305,9 +347,9 @@ Un \eng{attribute implication} es una expresión $A \Rightarrow B$ con $A$ y $B$
 
 \subsection{Raíces Históricas y Desarrollo} % (fold)
 \label{sub:ra_ces_historicas_y_desarrollo}
-A pesar que existen previos intentos, es comúnmente aceptado que \abr{FCA} comenzó con el artículo de Wille~\cite{wille1982}. En el cual provee un cuidadoso desarrollo del fundamento matemático de la técnica, el cual fue útil luego para desarrollar el fundamento computacional como uno de las fuertes características de \abr{FCA}. Otra de sus características es la noción simple y robusta de ``concepto'' inspirado en un enfoque tradicional que los tratan como lógica tradicional. 
+A pesar que existen previos intentos, es comúnmente aceptado que \abr{FCA} comenzó con el artículo de Wille~\cite{wille1982}. En el cual provee un cuidadoso desarrollo del fundamento matemático de la técnica, el cual fue útil luego para desarrollar el fundamento computacional como una de las fuertes características de \abr{FCA}. Otra de sus características es la noción simple y robusta de ``concepto'' inspirado en un enfoque tradicional que los tratan como lógica tradicional. 
 
-La introducción y las aplicaciones de \abr{FCA} se describen en el trabajo de Carpineto y Romano~\cite{carpineto2004}, los fundamentos matemáticos están cubiertos por Ganter~\cite{Ganter1997} y el estado del arte esta tratado en el trabajo de Ganter et. al.~\cite{Ganter2005}
+La introducción y las aplicaciones de \abr{FCA} se describen en el trabajo de Carpineto y Romano~\cite{carpineto2004}, los fundamentos matemáticos están cubiertos por Ganter~\cite{Ganter1997} y el estado del arte está tratado en el trabajo de Ganter et. al.~\cite{Ganter2005}
 
 \subsection{\eng{Concept Lattices}}
 \label{sub:concept_lattices}
@@ -315,7 +357,7 @@ Esta sección introduce las nociones básicas y estructuras matemáticas asociad
 
 \subsubsection{Datos de Entrada}
 \label{ssub:datos_de_entrada}
-En una configuración básica, los datos de entrada de \abr{FCA} se encuentran en la forma de tabla (llamada \eng{cross-table}), la cual describe la relación entre los objetos (representados por las filas de la tabla) y atributos (representados por las columnas de la tabla). Un ejemplo se puede apreciar en la Tabla~\ref{tbl:cross_table}. La entrada $\times$ indica que el objeto tiene el correspondiente atributo.
+En una configuración básica, los datos de entrada de \abr{FCA} se encuentran en la forma de tabla (llamada \eng{cross-table}), la cual describe la relación entre los objetos (representados por las filas de la tabla) y atributos (representados por las columnas de la tabla). Un ejemplo se puede apreciar en la Tabla~\ref{tbl:cross_table}. Donde el símbolo $\times$ indica que el objeto $x_i$ tiene el correspondiente atributo $y_i$.
 
 \begin{table}[h!]
 	\centering
@@ -340,10 +382,10 @@ Formalmente, una \eng{cross-table} es representada por lo que se llama un \eng{F
 
 \theoremstyle{definition}
 \begin{definition}{(\eng{formal context})}
-Un \eng{formal context} is una tripleta $\langle X,Y,I \rangle$ donde $X$ e $Y$ son conjuntos no vacíos e $I$ es una relación binaria entre $X$ e $Y$. Es decir, $I \subseteq X \times Y$.
+Es una tripleta $\langle X,Y,I \rangle$ donde $X$ e $Y$ son conjuntos no vacíos e $I$ es una relación binaria entre $X$ e $Y$. Es decir, $I \subseteq X \times Y$.
 \end{definition}
 
-Para un \eng{formal context}, los elementos $x$ de $X$ son llamados objetos y los elementos $y$ de $Y$ son los llamados atributos. $\langle x,y \rangle \in I$ indica que el objeto $x$ tiene el atributo $y$. Dada una \eng{cross-table} con $n$ filas y $m$ columnas, el contexto formal $\langle X,Y,I \rangle$ consiste en los conjuntos $X = \{x_1,\dots,x_n\}$, $Y = \{y_1,\dots,y_m\}$, y la relación $I$ definida por $\langle x_i,y_j \rangle \in I$ si y solo sí existe una entrada en la tabla correspondiente a la fila $i$ y columna $j$ que contiene $\times$. 
+Para un \eng{formal context}, los elementos $x$ de $X$ son llamados objetos y los elementos $y$ de $Y$ son los llamados atributos. $\langle x,y \rangle \in I$ indica que el objeto $x$ tiene el atributo $y$. Dada una \eng{cross-table} con $n$ filas y $m$ columnas, el contexto formal $\langle X,Y,I \rangle$ consiste en los conjuntos $X = \{x_1,\dots,x_n\}$, $Y = \{y_1,\dots,y_m\}$, y la relación $I$ definida por $\langle x_i,y_j \rangle \in I$ si y solo si existe una entrada en la tabla correspondiente a la fila $i$ y columna $j$ que contiene $\times$. 
 
 \subsubsection{Operadores de Formación de Conceptos}
 \label{ssub:operadores_de_formacion_de_conceptos}
@@ -358,6 +400,9 @@ Dado un \eng{formal context} $\langle X,Y,I \rangle$, los operadores $^{\uparrow
 \end{definition}
 
 \begin{remark}[]
+
+$ $
+
 \begin{itemize}
 	\item El operador $^{\uparrow}$ asigna subconjuntos de $Y$ a subconjuntos de $X$. $A^{\uparrow}$ es el conjunto de atributos que comparten todos los objetos de A.
 	\item Por otro lado, el operador $^{\downarrow}$ asigna subconjuntos de $X$ a subconjuntos de $Y$. $B^{\downarrow}$ es el conjunto de todos los objetos que comparten todos los atributos de $B$.
@@ -455,10 +500,11 @@ Donde, $\langle A_2,B_2 \rangle = \langle\{x_1,x_3,x_4\}, \{y_2,y_3,y_4\}\rangle
 
 La noción de \eng{formal concept} puede ser entendida como una simple matematización de la bien conocida noción de ``concepto'' que se basa en la lógica de \eng{Port-Royal}. De acuerdo a \eng{Port-Royal}, un concepto está determinado por una colección de objetos (\eng{extent}) y una colección de atributos (\eng{intent}) que comparten estos objetos. Además, los conceptos están ordenados naturalmente usando una relación de subconcepto-súperconcepto. Esta relación radica en la relación de inclusión sobre objetos y atributos. Formalmente, la relación subconcepto-súperconcepto se define como sigue. 
 
-\begin{definition}{relación subconcepto-súperconcepto}
+\begin{definition}{Relación subconcepto-súperconcepto}
 Para los conceptos dados por $\langle A_1,B_1 \rangle$ y $\langle A_2, B_2 \rangle$ de la tripleta $\langle X,Y,I \rangle$, se dice que $\langle A_1,B_1 \rangle \le \langle A_2,B_2 \rangle$ iff $A_1 \subseteq A_2$ (iff $B_2 \subseteq B_1$).
 \end{definition}
 \begin{remark}[]
+	$ $
 	\begin{itemize}
 		\item[--] $\le$ representa el ordenamiento entre subconcepto-súperconcepto.
 		\item[--] $\langle A_1,B_1 \rangle \le \langle A_2,B_2 \rangle$ significa que $\langle A_1,B_1 \rangle$ es más específico que $\langle A_2,B_2 \rangle$. ($\langle A_2,B_2 \rangle$ es más general).
@@ -477,20 +523,31 @@ La colección de todos los conceptos formales dado un contexto formal, se denomi
 \end{equation*}
 \end{definition}
 
-$\Beta(X,Y,I)$ provista con el ordenamiento de subconcepto-súperconcepto $\le$ se denomina \eng{concept lattice} de $\langle X,Y,I \rangle$.
+Además, de acuerdo a la definición anterior, se puede decir que $\Beta(X,Y,I)$ provista con el ordenamiento de subconcepto-súperconcepto $\le$ se denomina \eng{concept lattice} de $\langle X,Y,I \rangle$.
+
+Esto cumple con las siguientes características:
 
 \begin{itemize}
 	\item $\Beta(X,Y,I)$ representa todos (potencialmente interesantes) clústeres que están ``escondidos'' en la data de $\langle X,Y,I \rangle$.
 	\item Se puede entender que $\langle \Beta(X,Y,I),\le \rangle$ es un \eng{concept lattice}.
 \end{itemize}
 
-También se denota como
-\begin{equation*}
-	\text{Ext}(X,Y,I) = \{A \in 2^X | \langle A,B \rangle \in \Beta(X,Y,I) \text{ para algún }B \} \text{ (\eng{extent} de los conceptos)}
-\end{equation*}
-\begin{equation*}
-	\text{Int}(X,Y,I) = \{A \in 2^Y | \langle A,B \rangle \in \Beta(X,Y,I) \text{ para algún }A \} \text{ (\eng{intent} de los conceptos)}.
-\end{equation*}
+Por otro lado, a partir de lo anterior, se puede definir:
+
+\begin{itemize}
+	\item Extensión (\eng{extent}) de los conceptos.
+		\begin{equation*}
+			\text{Ext}(X,Y,I) = \{A \in 2^X | \langle A,B \rangle \in \Beta(X,Y,I) \text{ para algún }B \}		
+		\end{equation*}
+	\item Intensión \eng{intent} de los conceptos.
+		\begin{equation*}
+			\text{Int}(X,Y,I) = \{A \in 2^Y | \langle A,B \rangle \in \Beta(X,Y,I) \text{ para algún }A \}
+		\end{equation*}
+\end{itemize}
+
+
+
+
 
 Por ejemplo, si se considera la siguiente \eng{cross-table} ~\cite{Ganter1997}
 
@@ -515,7 +572,27 @@ Por ejemplo, si se considera la siguiente \eng{cross-table} ~\cite{Ganter1997}
 
 El correspondiente \eng{formal context} $\langle X,Y,I \rangle$ contiene los siguientes conceptos formales:
 
-\concept{C_0}{1,2,3,4,5,6,7,8}{a}, \concept{C_1}{1,2,3,4}{a,g}, \concept{C_2}{2,3,4}{a,g,h}, \concept{C_3}{5,6,7,8}{a,d}, \concept{C_4}{5,6,8}{a,d,f}, \concept{C_5}{3,4,6,7,8}{a,c}, \concept{C_6}{3,4}{a,c,g,h}, \concept{C_7}{4}{a,c,g,h,i}, \concept{C_8}{6,7,8}{a,c,d}, \concept{C_9}{6,8}{a,c,d,f}, \concept{C_{10}}{7}{a,c,d,e}, \concept{C_{11}}{2,3}{a,b,g,h}, \concept{C_{12}}{1,2,3}{a,b,g}, \concept{C_{13}}{2,3}{a,b,g,h}, \concept{C_{14}}{5,6}{a,b,d,f}, \concept{C_{15}}{3,6}{a,b,c}, \concept{C_{16}}{3}{a,b,c,g,h}, \concept{C_{17}}{6}{a,b,c,d,f}, \concept{C_{18}}{}{a,b,c,d,e,f,g,h,i}.
+\begin{itemize}
+	\item \concept{C_0}{1,2,3,4,5,6,7,8}{a} 
+	\item \concept{C_1}{1,2,3,4}{a,g} 
+	\item \concept{C_2}{2,3,4}{a,g,h} 
+	\item \concept{C_3}{5,6,7,8}{a,d} 
+	\item \concept{C_4}{5,6,8}{a,d,f} 
+	\item \concept{C_5}{3,4,6,7,8}{a,c} 
+	\item \concept{C_6}{3,4}{a,c,g,h} 
+	\item \concept{C_7}{4}{a,c,g,h,i} 
+	\item \concept{C_8}{6,7,8}{a,c,d} 
+	\item \concept{C_9}{6,8}{a,c,d,f} 
+	\item \concept{C_{10}}{7}{a,c,d,e} 
+	\item \concept{C_{11}}{2,3}{a,b,g,h} 
+	\item \concept{C_{12}}{1,2,3}{a,b,g} 
+	\item \concept{C_{13}}{2,3}{a,b,g,h} 
+	\item \concept{C_{14}}{5,6}{a,b,d,f} 
+	\item \concept{C_{15}}{3,6}{a,b,c} 
+	\item \concept{C_{16}}{3}{a,b,c,g,h} 
+	\item \concept{C_{17}}{6}{a,b,c,d,f} 
+	\item \concept{C_{18}}{}{a,b,c,d,e,f,g,h,i}
+\end{itemize}
 
 El correspondiente \eng{concept lattice} $\Beta(X,Y,I)$ se aprecia en la Figura~\ref{fig:concept_lattice_full_example}
 
@@ -547,9 +624,9 @@ El correspondiente \eng{concept lattice} $\Beta(X,Y,I)$ se aprecia en la Figura~
 
 \section{Topic Models}
 \label{sec:topic_models}
-Los algoritmos de \eng{Topic Modeling} \cite{TopicModels2009} son usados para descubrir un conjunto de ``{tópicos}'' dentro de una gran colección de documentos, donde un {\bf tópico} es una distribución de términos los cuales están relacionados a través de un único tema. \eng{Topic Models} proveen una legible representación de baja dimensionalidad de los documentos \cite{Chang2009}. Estos algoritmos han sido usados para tareas como exploración de corpus, clasificación de documentos y recuperación de información.
+Los algoritmos de \eng{Topic Modeling} \cite{TopicModels2009} son usados para descubrir un conjunto de ``{tópicos}'' dentro de una gran colección de documentos, donde un {\bf tópico} es una distribución de términos los cuales están relacionados a través de un único tema. \eng{Topic Models} proveen una legible representación de baja dimensionalidad de los documentos \cite{Chang2009}. Estos algoritmos han sido usados para tareas como exploración de \eng{corpus}, clasificación de documentos y recuperación de información.
 
-El modelo mas simple de \eng{Topic Modeling} es \eng{Latent Dirichlet Allocation} \cite{BleiLDA2003}. En donde se asume que existen $K$ tópicos: $\boldsymbol\beta = \beta_{1:K}$, donde cada uno es una distribución de un vocabulario fijo. El proceso generativo de \emph{LDA} es como se describe a continuación. Por cada documento $w_j$ en la colección,
+El modelo más simple de \eng{Topic Modeling} es \eng{Latent Dirichlet Allocation} \cite{BleiLDA2003}. En donde se asume que existen $K$ tópicos: $\boldsymbol\beta = \beta_{1:K}$, donde cada uno es una distribución de un vocabulario fijo. El proceso generativo de \emph{LDA} es como se describe a continuación. Por cada documento $w_j$ en la colección,
 
 \begin{enumerate}
 	\item Calcular las proporciones del tópico $\theta_j \sim \text{Dirichlet}(\alpha)$
@@ -569,40 +646,11 @@ Este proceso revela como se asume que las palabras de cada documento provienen d
 	\label{fig:lda}
 \end{figure}   
 
-El modelo representado en la Figura~\ref{fig:lda} muestra como es posible generar un documento utilizando una mezcla de temas. El número de tópicos esta dado por la distribución finita $K$. Estos temas están compuestos por una distribución de palabras $\beta_k$, pertenecientes a un vocabulario en específico. La proporción de temas para un documento $d$, esta dada representada por $\theta_d$. $Z_d$ corresponde a los temas asignados al documento $d$. Luego $Z_{d,n}$ corresponde al tema asignado por la palabra $n$ en el documento $d$. Finalmente, la palabra observada para el documento $d$ es $w_d$, donde $w_{d,n}$ es la palabra $n$ en el documento $d$, que corresponde a una palabra de un vocabulario fijo.
+El modelo representado en la Figura~\ref{fig:lda} muestra como es posible generar un documento utilizando una mezcla de tópicos. El número de estos esta dado por la distribución finita $K$. Estos (tópicos), a su vez, están compuestos por una distribución de palabras $\beta_k$, pertenecientes a un vocabulario específico. 
 
+La proporción de tópicos para un documento $d$, esta dada representada por $\theta_d$. Por otro lado, $Z_d$ corresponde a los temas asignados al documento $d$. Además $Z_{d,n}$ corresponde al tema asignado por la palabra $n$ en el documento $d$. 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%% 				Descripción de Problemas 				%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Descripción de Problemas}
-\label{chap:problem_description}
-\section{Base de Datos Científicas}
-\label{sec:base_de_datos_cientificas}
-
-% La comunidad científica consume grandes cantidades de información a través de diferentes fuentes, en donde podemos encontrar artículos de revistas, libros, tesis, bases de datos, conferencias y colaboraciones entre muchas otras. Particularmente, los artículos de revistas son la principal fuente de información para científicos. Por ejemplo, los ``Físicos'' leen un promedio de 204 artículos por año, mientras que los ``Químicos'' leen aproximadamente 276 artículos por año. Además, los científicos y médicos leen tres veces mas artículos de revistas que los profesionales de áreas legales, administración y ventas. Para encontrar estos artículos, los científicos buscan a través de revistas o buscan en base de datos bibliográficos. Por ejemplo, \eng{PubMed}\footnote{\url{http://www.ncbi.nlm.nih.gov/pubmed}} (\eng{National Library of Medicine}) tiene entre $500.000$ y $1.000.000$ búsquedas cada día.  
-Una importante actividad de la comunidad científica es mantenerse al tanto de las investigaciones actuales dentro
-del área donde trabajan. Los científicos utilizan muchas formas de comunicación, herramientas y servicios para encontrar artículos relevantes ~\cite{hoggan2002, tenopir2001}.
-
-Una biblioteca, es una colección de registros del conocimiento humano, la cual es la mayor fuente de información para científicos. Los bibliotecarios sirven como mediadores entre los humanos y la colección bibliográfica en orden de maximizar la utilización de registros para el beneficio de la sociedad ~\cite{marsterson1986}.
-
-La organización, el proceso y la funcionalidad de una biblioteca ha ido cambiando dramáticamente con la introducción de la tecnología, especialmente con la Web ~\cite{saunders1993}. Estos cambios han tenido un gran impacto en las formas que los científicos realizan sus investigaciones.
-
-La Web provee un nuevo medio para almacenar, presentar, reunir, compartir, procesar y utilizar la información. Lleva a una nueva era de la información. Ahí hay una tremenda cantidad de material \eng{online} como periódicos, películas, música, revistas, y muchos otros productos y servicios. Conceptualmente, la Web puede ser observada como una gigante biblioteca virtual que permite búsquedas ~\cite{saunders1993}. Para realizar un uso efectivo de la Web para la comunidad científica produce un gran desafío.
-
-Los científicos encaran muchos desafíos usando recursos basados en la Web para encontrar estos artículos, como son por ejemplo: sobrecarga de información, desinformación, pagos, navegación pobremente diseñada y herramientas de navegación y recuperación ~\cite{hoggan2002}. Existe una necesidad urgente de nuevos sistemas de información que soporten actividades de investigación académica y jueguen el rol de los tradicionales bibliotecarios.
-
-Los sistemas de recuperación de información basados en la Web (\abr{WIRSS} por sus siglas en inglés) ayudan a las actividades básicas de científicos, como son recuperación, exploración, organización y utilización de la información en la Web ~\cite{yao2003web,yao2002information}. El objetivo de los \abr{WIRSS} para científicos es construir nuevas y mas eficientes herramientas de investigación para que la misma comunidad tome la ventaja de utilizar la Web. Con estas herramientas, la Web para la comunidad científica puede ser vista como una grande y personalizada base de conocimiento.
-
-Una vez identificada las necesidades de un \abr{WIRSS}, es tentador el paso siguiente, crear nuevas teorías y construir nuevos sistemas. Sin embargo, el gran número de sistemas implementados que existen, comparados con la pequeña cantidad que en la práctica se ocupan sugiere que esta no podría ser la mejor opción. Es por esta razón que es útil pensar en un nuevo enfoque, como es el caso de un ``Caso de Estudio''. Particularmente, uno de los sitios mas usados como fuente bibliográfica es \abr{DBLP} ~\cite{yin2013case}.  
-
-\section{Dimensionalidad}
-\label{sec:dimensionalidad}
-La cantidad de artículos que se encuentra disponible en Internet está creciendo cada año. Esto provoca una dificultad para mantener realizar un seguimiento a tendencias, seguir ideas, buscar nuevas terminologías, etc. Aunque algunas comunidades entienden la necesidad de tener un artefacto que represente el conocimiento de un determinado dominio como son las ontologías, cuerpos de conocimiento o incluso las taxonomías, el principal problema radica el costo de la construcción de estos artefactos: es muy difícil (por el nivel técnico requerido), caros (investigadores escasos) y  complejos (información dinámica) ~\cite{codocedo2011cheating}.
-
-El problema particular de la creación automática o semi-automática de taxonomías ha sido abordado por los trabajos ~\cite{cimiano2005learning,dakka2005automatic,kominek1997accessing,yeh2008ontology}. Sin embargo, en este trabajo se abordará el enfoque de Roth et al. ~\cite{roth2008towards} en donde la taxonomía es obtenida a través de los cuerpos de los documentos a través de la técnica \eng{Formal Concept Analysis}. En dicho trabajo, se utiliza un conjunto de \eng{abstracts} de la ``comunidad embrióloga'' obtenida a través de \abr{MedLine} a lo largo de 5 años donde contiene un conjunto aleatorio de 25 autores y 18 términos a analizar. A pesar que los resultados del trabajo mencionado son una representación fiable del dominio, los tamaños de las colecciones de artículos científicos reales que se trata de abarcar en este trabajo son mucho mayores.
-
-Manejar grandes \eng{datasets} a sido definido como uno de los problemas abiertos en la comunidad de \abr{FCA}\footnote{\url{http://www.upriss.org.uk/fca/problems06.pdf}} por dos razones principales: primero, los costos computacionales involucrados en el calculo del \eng{concept lattice} puede provocar que el uso de \abr{FCA} sea prohibitivo para grandes colecciones. Y segundo, el \eng{concept lattice} puede ser tan complejo que sea imposible de utilizar como herramienta para facilitar la navegación y búsqueda de documentos científicos. 
+Finalmente, la palabra observada para el documento $d$ es $w_d$, donde $w_{d,n}$ es la palabra $n$ en el documento $d$, que corresponde a una palabra de un vocabulario fijo.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
