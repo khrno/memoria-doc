@@ -1230,7 +1230,7 @@ En la figura \ref{fig:results_7} se puede apreciar un gráfico que representa la
 
  \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.8\textwidth]{images/results_8.png}
+	\includegraphics[width=0.6\textwidth]{images/results_8.png}
 	\caption{\eng{Token Cloud} que forman el concepto}
 	\label{fig:results_8}
 \end{figure}
@@ -1241,28 +1241,32 @@ Asimismo, en la figura \ref{fig:results_8} se puede ver una nube de \eng{tokens}
 
  \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.9\textwidth]{images/results_9.png}
+	\includegraphics[width=0.8\textwidth]{images/results_9.png}
 	\caption{Lista de documentos - objetos - que forman el concepto}
 	\label{fig:results_9}
 \end{figure}
 
 Por otro lado, la sección ilustrada por la figura \ref{fig:results_9} indica la colección de documentos presentes en el concepto. Dado que en la mayoría de los conceptos la cantidad de documentos que lo conforman es muy alta, se decidió paginar estos resultados.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%% 					Conclusiones 						%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Conclusiones}
-\label{chap:conclutions}
-Durante el desarrollo del presente trabajo fue posible generar una clusterización jerárquica suave de una gran colección de documentos científicos, utilizando dos técnicas separadamente para enfrentar el gran problema de la dimensionalidad de los datos. De esta forma, se logró comprobar que existen modelos matemáticos que por si solos o son lo suficientemente capaces de manejar grandes cantidades de información, como es el caso de \abr{FCA}, sin embargo, al utilizarlos junto a otros modelos estadísticos, particularmente \abr{LDA}, forman una gran dupla que permiten resolver - al menos de modo parcial - uno de los principales problemas que existen en el día de hoy: una inconmensurable cantidad de información y una alta aceleración en la producción de la misma.
+\clearpage
 
-Por otro lado, si se observa cuidadosamente los resultados obtenidos, se puede comprobar que si existe una relación adecuada entre los resultados de la técnica \abr{LDA} y los resultados de la técnica \abr{FCA}. Como por ejemplo, si se toma el caso particular el concepto que tiene id $46$ (Figura \ref{fig:conclusiones_1}), se puede observar que los \eng{tokens} más relevantes del concepto son: ``\eng{Video}'', ``\eng{Coding}'', ``\eng{image}'', los cuales tiene mucha relación como descriptores de los tópicos ``\eng{Multimedia}'' y ``\eng{Telecommunications}'' que corresponden a ser los que mayor relación tienen con el concepto.
+Con el objetivo de verificar la relación existente entre los \eng{Formal Concepts} y su distribución de tópicos emergentes, es decir, evaluar la relación que existe entre las dos técnicas utilizadas, es posible analizar la \autoref{fig:conclusiones_1}
 
- \begin{figure}[h!]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\textwidth]{images/conclusiones_1.png}
 	\caption{Relación entre resultados de \abr{FCA} y \abr{LDA}}
 	\label{fig:conclusiones_1}
 \end{figure}
+
+Si se observa cuidadosamente los resultados obtenidos presentados en la \autoref{fig:conclusiones_1}, se puede comprobar que si existe una relación adecuada entre los resultados de la técnica \abr{LDA} y los resultados de la técnica \abr{FCA}. Como por ejemplo, si se toma el caso particular el concepto que tiene id $46$ (Figura \ref{fig:conclusiones_1}), se puede observar que los \eng{tokens} más relevantes del concepto son: ``\eng{Video}'', ``\eng{Coding}'', ``\eng{image}'', los cuales tiene mucha relación como descriptores de los tópicos ``\eng{Multimedia}'' y ``\eng{Telecommunications}'' que corresponden a ser los que mayor relación tienen con el concepto.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% 					Conclusiones 						%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Conclusiones}
+\label{chap:conclutions}
+Durante el desarrollo del presente trabajo fue posible generar una clusterización jerárquica suave de una gran colección de documentos científicos, utilizando dos técnicas separadamente para enfrentar el gran problema de la dimensionalidad de los datos. De esta forma, se logró comprobar que existen modelos matemáticos que por si solos o son lo suficientemente capaces de manejar grandes cantidades de información, como es el caso de \abr{FCA}. Sin embargo, al utilizarlos junto a otros modelos estadísticos, particularmente \abr{LDA}, forman una gran dupla que permiten resolver - al menos de modo parcial - uno de los principales problemas que existen en el día de hoy: una inconmensurable cantidad de información y una alta aceleración en la producción de la misma.
 
 Asimismo, con el objetivo de visualizar los resultados realizados por este trabajo, se logro comprobar que existen herramientas (\eng{Gephi} y \eng{SigmaJS}) que permite facilitar la visualización de grandes colecciones de redes complejas. Es más, las herramientas utilizadas para la generación del navegador del \eng{Lattice} componen tres grandes características que las hacen una gran elección para visualizar grandes redes complejas:
 
@@ -1270,17 +1274,20 @@ Asimismo, con el objetivo de visualizar los resultados realizados por este traba
 	\item Flexibilidad: entrega al usuario la capacidad de utilizarlas de acuerdo a sus necesidades sin mayores problemas.
 	\item Robustas: permiten trabajar con una gran cantidad de información con la seguridad que no fallarán. 
    	\item Pertenecen al mundo del \eng{open source}: permite que las personas interesadas puedan extenderlas, modificarlas utilizarlas sin pagar licencias de altos costos.
-   \end{itemize}   
+\end{itemize}   
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%% 					Trabajo Futuro 						%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Trabajo Futuro}
-\section{Componente Social}
+\section{Trabajo Futuro}
+\subsection{Componente Social}
 En este trabajo, para una determinada colección de artículos científicos (\abr{DBLP}) se generó una clusterización basada en los títulos y las palabras claves que lo componen. Como trabajo futuro se plantea agregar una componente social a dicha colección a través de las redes de colaboración entre autores de los trabajos. Esto permitirá generar una red social de autores, en la cual se plantea detectar las comunidades científicas y una vez detectadas, observar como se comporta el conocimiento de dicha comunidad, es decir, responder a la pregunta ¿Qué ha estado trabajando la comunidad de investigadores relacionada por ejemplo, con el cáncer?.
 
-\section{Descriptores de cada objeto}
+\subsection{Descriptores de cada objeto}
 Como futuro trabajo se plantea cambiar extender o cambiar la colección para que se incluyan los \eng{abstracts} de cada documento, lo cual permitiría una clasificación a través de la técnica {FCA} más suavizada ya que el \eng{Formal Context} tendría una mayor densidad en proporción a la cantidad de palabras que componen un título comparado con la cantidad de palabras que componen un \eng{abstract}.
+
+
+\section{Componente Educacional}
+Para realizar el trabajo presentado en este documento, se tomó en consideración conceptos de Paradigmas de Programación vistas en la asignatura Lenguajes de Programación, también como organizar el mismo proyecto utilizando metodologías ágiles, donde las asignaturas Ingeniería de Software y Taller de Ingeniería de Software fueron de gran utilidad. Además se utilizaron patrones de diseño aprendidos durante el curso de la asignatura Fundamentos de Ingeniería de Software.
+
+Desde un punto de vista más técnico, el almacenamiento de las fuentes de información y la programación orientada a objetos fueron claves para lograr generar los resultados y de esta forma evaluarlos, por lo que las asignaturas Programación, Estructura de Computadores, Almacenamiento y Recuperación de la información y Base de Datos fueron un fundamentales para realizarlo.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
