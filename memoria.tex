@@ -682,9 +682,9 @@ Algunas herramientas que existen para utilizar \abr{LDA} son \eng{MALLET}, \eng{
 
 \subsection{\abr{Mallet}}
  \label{sub:mallet}
-\abr{Mallet} es un paquete de JAVA para procesamiento estadístico de lenguajes naturales, clasificación de documentos, clustering, topic modeling, extracción de información y otras aplicaciones de \eng{machine learning} a texto.
+\abr{Mallet} es un paquete de JAVA para procesamiento estadístico de lenguajes naturales, clasificación de documentos, \eng{clustering}, \eng{topic modeling}, extracción de información y otras aplicaciones de \eng{machine learning} a texto.
 
-El paquete de topic modeling de MALLET incluye una implementación de Gibbs sampling para realizar inferencia estadística y otras herramientas para inferir los temas de un documento en base a un modelo dado.
+El paquete de topic modeling de MALLET incluye una implementación de \eng{Gibbs sampling} para realizar inferencia estadística y otras herramientas para inferir los temas de un documento en base a un modelo dado.
 
 \subsection{\eng{Topic Models} en \abr{R}}
  \label{sub:topic_models_r} 
@@ -705,12 +705,13 @@ Gensim también incluye implementaciones para \eng{tf–idf}, \eng{random projec
 El \eng{Stanford Topic Modeling Toolbox (\eng{TMT})}, desarrollado en el lenguaje de programación \eng{Scala}, contiene herramientas que permiten analizar grandes cantidades de documentos. Sus principales características son:
 
 \begin{itemize}
+	\setlength{\itemindent}{.1in}
 	\item Importar y manipular texto desde hojas de calculo en Excel y CSV.
 	\item Utilizar LDA, Labeled LDA, y PLDA.
 	\item Generar outputs compatibles con Excel.
 \end{itemize}
 
-\abr{TMT} fue desarrollado por Daniel Ramage y Evan Rosen, su primera versión fue lanzada en Septiembre del 2009.
+\abr{TMT} fue desarrollado por Mark Steyvers y Tom Griffiths~\cite{matlabtoolbox}, su primera versión fue lanzada en Septiembre del 2009.
 
 \section{Clusterización de Documentos}
 \label{sec:clusterizacion_de_documentos}
@@ -743,7 +744,7 @@ Dada la naturaleza de la técnica \abr{LDA}, la cual por cada tópico genera un 
 
 \subsection{Generación de \eng{formal context}}
 \label{sub:generacion}
-A partir de la selección de ``términos relevantes'', se generará el \eng{formal context} de la colección. Esto se hará a través del siguiente algoritmo:
+A partir de la selección de ``términos relevantes'', se generará el \eng{formal context} de la colección. En donde se iterará por cada documento y se verificará la presencia o no presencia de cada término relevante en cada documento. Este procedimiento tiene una complejidad  de orden cuadrático ($O(n^2)$). Esto quiere decir que mientras más sea los documentos y/o los términos relevantes, mayor recursos requerirá el siguiente algoritmo:
 
 \begin{algorithm}[h!]
 	\caption{Generación de \eng{Formal Context}}
@@ -770,7 +771,7 @@ A partir de la selección de ``términos relevantes'', se generará el \eng{form
 \label{sub:clusterizacion}
 Utilizando el \eng{Formal Context} generado, se generará la clusterización jerárquica de documentos y \eng{Tokens} utilizando la técnica anteriormente descrita \abr{FCA}. Para realizar esto, existe la herramienta \emph{Coron System} \cite{coron}. Esta herramienta genera el \eng{Lattice} utilizando técnicas de extracción de conjuntos de datos frecuentes, es decir, buscando los cuadrados maximales dentro del contexto dado. 
 
-La arquitectura utilizada por \eng{Coron System} se puede observar en la siguiente figura:
+La arquitectura utilizada por \eng{Coron System} se puede observar en la \autoref{fig:coron_life_cycle}.
 
 
 \begin{figure}[h!]
@@ -818,7 +819,7 @@ La extensión de \eng{formal concepts} se puede apreciar en el siguiente algorit
 	\end{algorithmic}
 \end{algorithm}
 
-En el algoritmo \ref{alg:IntentExtension} se puede apreciar que por cada \emph{concepto} se obtienen las palabras mas representativas de los titulos, que cumplen con los siguientes criterios:
+En el algoritmo \ref{alg:IntentExtension} se puede apreciar que por cada \emph{concepto} se obtienen las palabras más representativas de los títulos, que cumplen con los siguientes criterios:
 
 \begin{enumerate}
 	\item Deben ser sustantivos.
@@ -873,10 +874,19 @@ Dado que formatos para el intercambio de grafos han existido a lo largo del tiem
 	\item Utilidad de \abr{XML}: es un lenguaje conocido, tiene capacidad de soporte para utilizar \eng{namespaces} y además existen innumerables motores de base de datos basados en XML.
 \end{enumerate}
 
-\subsubsection{Ejemplo}
 Este pequeño ejemplo contiene dos nodos y un arco que los relaciona:
 
 \lstset{
+  basicstyle=\footnotesize\tt,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=single,                    % adds a frame around the code
+  keywordstyle=\bf,
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  tabsize=2                       % sets default tabsize to 2 spaces
   language=XML,
   morekeywords={encoding,
     xs:schema,xs:element,xs:complexType,xs:sequence,xs:attribute,gexf, meta, creator, description, graph, nodes, node, edges, edge, id, label, source, target, xmlns, lastmodifieddate, mode, defaultedgetype}
@@ -1099,7 +1109,7 @@ Además, cada nivel tiene sus conceptos ordenados por el valor del soporte de ca
 \section{\eng{Lattices} Generados}
 A través de la implementación de este trabajo, se probó con diferentes valores del parámetro \eng{minsupp}, para poder tener una observación tangible de cuán sensible es el \eng{iceberg lattice} a la elección de este parámetro.
 
-Los resultados se presentan a continuación:
+Los resultados se presentan en la \autoref{tbl:minsupp_sensibility_table}
 
 \begin{table}[h!]
 \centering
@@ -1122,7 +1132,7 @@ Los resultados se presentan a continuación:
 \end{tabular}
 \end{table}
 \newpage
-La tabla anterior, genera la siguiente gráfica:
+La \autoref{tbl:minsupp_sensibility_table} , genera el gráfico presente en la \autoref{fig:minsupp_sensibility}. Donde se puede ver que la cantidad de conceptos decrece exponencialmente. Esto se debe a que la información utilizada para generar el lattice, particularmente el \eng{Formal Context} es una matriz muy dispersa dada la misma naturaleza de los datos. Pocos \eng{tokens} en comparación con la cantidad de documentos.
 
 \begin{figure}[h!]
 	\centering
@@ -1131,19 +1141,22 @@ La tabla anterior, genera la siguiente gráfica:
 	\label{fig:minsupp_sensibility}
 \end{figure} 
 
-Donde se puede ver que la cantidad de conceptos decrece exponencialmente. Esto se debe a que la información utilizada para generar el lattice, particularmente el \eng{Formal Context} es una matriz muy dispersa dada la misma naturaleza de los datos. Pocos \eng{tokens} en comparación con la cantidad de documentos.
+\newpage
 
 \section{\eng{Lattice} Navegable}
-Es la página principal del sitio web, en donde se presenta el \eng{Iceberg Lattice} para diferentes soportes: $0.5$ y $0.09$.
+Es la página principal del sitio web, en donde se presenta el \eng{Iceberg Lattice} para diferentes soportes: $0.5$ y $0.09$. El lattice con soporte mínimo de 0.5 se puede ver en la \autoref{fig:results_1}.
 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.90\textwidth]{images/results_1.png}
-	\caption{Página principal de la visualización del \eng{Lattice}.}
+	\caption{Página principal de la visualización del \eng{Lattice} con soporte minimo de $0.5$.}
 	\label{fig:results_1}
 \end{figure} 
 
-Aquí es donde se encuentra la mayor interacción con el usuario, ya que utilizando las herramientas que se detallan en la figura \ref{fig:results_2} este puede cambiar la visualización al \eng{Iceberg Lattice} de soporte $0.5$ o bien a la visualización del \eng{Iceberg Lattice} con soporte de $0.09$. Por otro lado, el usuario puede buscar los conceptos que contengan los \eng{top-terms} mas relevantes dado por su frecuencia.
+
+\newpage
+
+La barra de navegación, es donde se encuentra la mayor interacción con el usuario, ya que utilizando las herramientas que se detallan en la figura \ref{fig:results_2} este puede cambiar la visualización al \eng{Iceberg Lattice} de soporte $0.5$ o bien a la visualización del \eng{Iceberg Lattice} con soporte de $0.09$. Por otro lado, el usuario puede buscar los conceptos que contengan los \eng{top-terms} mas relevantes dado por su frecuencia.
 
 \begin{figure}[h!]
 	\centering
@@ -1152,7 +1165,9 @@ Aquí es donde se encuentra la mayor interacción con el usuario, ya que utiliza
 	\label{fig:results_2}
 \end{figure}
 
-Por otra parte, como se muestra en la figura \ref{fig:results_3} se puede seleccionar todos los conceptos de un determinado nivel determinado, al hacer esto, se carga un panel al lado derecho para que el usuario seleccione que concepto desea ver más en detalle.
+
+Por otra parte, como se muestra en la figura \ref{fig:results_3} se puede seleccionar todos los conceptos de un determinado nivel, al hacer esto, se carga un panel al lado derecho para que el usuario seleccione que concepto desea ver más en detalle.
+
 
 \begin{figure}[h!]
 	\centering
@@ -1161,6 +1176,8 @@ Por otra parte, como se muestra en la figura \ref{fig:results_3} se puede selecc
 	\label{fig:results_3}
 \end{figure}
 
+
+\newpage
 Asimismo, cuando el usuario selecciona, o directamente del grafo o a través de la búsqueda o por medio del filtrado por nivel, un concepto específico se abre un panel de información detallada de este concepto que contiene la siguiente información. Tal como se muestra en la figura \ref{fig:results_4}.
 
  \begin{figure}[h!]
@@ -1191,7 +1208,7 @@ De este mismo modo, existen los botones de navegación dentro de la misma red. C
 
 
 \section{Detalles del Concepto}
-La página de los detalles del concepto permite ver como se conforma el mismo, además de la posición que toma dentro del \eng{Lattice} que lo contiene. Por otro lado, está página permite moverse a través del vecindario del concepto que estoy viendo, es decir, ir al concepto de la derecha, izquierda, arriba o abajo.
+La página de los detalles del concepto permite ver como se conforma el mismo, además de la posición que toma dentro del \eng{Lattice} que lo contiene. Por otro lado, esta página permite moverse a través del vecindario del concepto que estoy viendo, es decir, ir al concepto de la derecha, izquierda, arriba o abajo.
 
 \begin{figure}[h!]
 	\centering
