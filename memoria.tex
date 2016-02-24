@@ -89,21 +89,21 @@
 \newgeometry{top=3cm}
 \begin{centering}
 {
-\textbf{\Large UNIVERSIDAD TÉCNICA FEDERICO SANTA MARÍA}\\[0.3em]
-\textbf{\small DEPARTAMENTO DE INFORMÁTICA}\\[0.85em]
-\textbf{\small SANTIAGO -- CHILE}\\[2.4em]
+\textbf{\large UNIVERSIDAD TÉCNICA FEDERICO SANTA MARÍA}\\[0.3em]
+\textbf{\large DEPARTAMENTO DE INFORMÁTICA}\\[0.85em]
+\textbf{\large SANTIAGO -- CHILE}\\[2.4em]
 }
-\includegraphics[scale=0.295]{images/logo-utfsm} \\[4em]
+\includegraphics[scale=0.15]{images/logo-utfsm} \\[4em]
 \begin{spacing}{1.8}
 \textbf{\Large \uppercase{``Distribución de Tópicos Emergentes en Conceptos Formales''}} \\[3.70em]
 \end{spacing}
 \textbf{\large \uppercase{Pablo Antonio Ortega Mesa}}\\[0.54em]
 \textbf{\small MEMORIA DE TITULACIÓN PARA OPTAR AL TÍTULO DE INGENIERO CIVIL INFORMÁTICO} \\[1em]
-\begin{tabular}{ccc} \small\bf
+\begin{tabular}{rcl} \small\bf
 \small\bf PROFESOR GUÍA:          & & \small\bf \uppercase{Marcelo Mendoza} \\
 \small\bf PROFESOR CORREFERENTE:  & & \small\bf \uppercase{Jose Luis Martí} \\
 \end{tabular} \\[2.5em]
-\textbf{\small JULIO -- 2015} \\
+\textbf{\small FEBRERO -- 2016} \\
 \end{centering}
 \end{titlepage}
 \restoregeometry
@@ -886,11 +886,13 @@ Este pequeño ejemplo contiene dos nodos y un arco que los relaciona:
   keywordstyle=\bf,
   showstringspaces=false,          % underline spaces within strings only
   showtabs=false,                  % show tabs within strings adding particular underscores
-  tabsize=2                       % sets default tabsize to 2 spaces
+  tabsize=2,                       % sets default tabsize to 2 spaces
   language=XML,
   morekeywords={encoding,
     xs:schema,xs:element,xs:complexType,xs:sequence,xs:attribute,gexf, meta, creator, description, graph, nodes, node, edges, edge, id, label, source, target, xmlns, lastmodifieddate, mode, defaultedgetype}
 }
+
+
 \begin{lstlisting}
 <?xml version="1.0" encoding="UTF-8"?>
 <gexf xmlns="http://www.gexf.net/1.2draft" version="1.2">
